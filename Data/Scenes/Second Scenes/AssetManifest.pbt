@@ -26,11 +26,29 @@ Assets {
   }
 }
 Assets {
+  Id: 9143100974698702448
+  Name: "Animated Neon Sign - Bat"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_neonSign_flappyBat"
+  }
+}
+Assets {
   Id: 7887238662729938253
   Name: "Sky Dome"
   PlatformAssetType: 6
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Sky"
+  }
+}
+Assets {
+  Id: 485094150997981571
+  Name: "Animated Neon Sign - Basketball Score"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_NeonSign_BasketBallAnim"
   }
 }
