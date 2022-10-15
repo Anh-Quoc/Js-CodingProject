@@ -413,7 +413,7 @@ Assets {
     }
     Assets {
       Id: 2436979131935544357
-      Name: "Wood Planks Dark"
+      Name: "Wood Planks"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
