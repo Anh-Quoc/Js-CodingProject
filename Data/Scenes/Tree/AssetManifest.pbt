@@ -71,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14958818361434053190
+  Name: "Axe"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Axe"
+  }
+}
+Assets {
   Id: 14944976425975082747
   Name: "Sun Adjustment Volume"
   PlatformAssetType: 20
@@ -122,6 +131,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_001"
+  }
+}
+Assets {
+  Id: 13342392789809967405
+  Name: "BG Flat 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_22"
   }
 }
 Assets {
