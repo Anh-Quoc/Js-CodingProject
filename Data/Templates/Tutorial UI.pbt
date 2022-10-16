@@ -1438,22 +1438,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16901345339685765718
-      Name: "tutorial_fade"
-      PlatformAssetType: 3
-      TextAsset {
-        Text: "-- Example Tutorial UI\r\n\r\n-- INSTRUCTIONS\r\n-- Place this UI in a Client Context. \r\n-- Can toggle or press any button to close the UI.\r\n\r\nlocal uiOn = true\r\nlocal toggle_binding = script:GetCustomProperty(\"binding_name\")\r\nlocal speed = script:GetCustomProperty(\"speed\")\r\n\r\nlocal waitTime =  speed\r\nlocal fadeinTime = speed * 0.01\r\nlocal fadeoutTime = speed *  0.01\r\n\r\nfunction fadeInUI()\r\n\tfor k,v in pairs(objects) do\r\n\t\tobj = v\r\n\t\tif string.sub(v.name, -5) ~= \"Panel\" then\r\n    \t\tobjC = obj:GetColor()\r\n    \t\tobj:SetColor(Color.New(objC.r, objC.g, objC.b, 0))\r\n    \tend\r\n\tend\r\n\tfor alpha = 0,1,0.1 do\r\n\t\tfor k,v in pairs(objects) do\r\n\t\tobj = v\r\n\t\t\tif string.sub(v.name, -5) ~= \"Panel\" then\r\n    \t\t\tobjC = obj:GetColor()\r\n    \t\t\tobj:SetColor(Color.New(objC.r, objC.g, objC.b, alpha))\r\n    \t\tend\r\n\t\tend\r\n    \tTask.Wait(fadeinTime)\r\n\tend\r\n\tuiOn = true \r\nend\r\n\r\nfunction fadeOutUI()\r\n\tuiOn = false \r\n\r\n\tfor alpha = 1,0,-0.1 do\r\n\t\tfor k,v in pairs(objects) do\r\n\t\tobj = v\r\n\t\t\tif string.sub(v.name, -5) ~= \"Panel\" then\r\n    \t\t\tobjC = obj:GetColor()\r\n    \t\t\tobj:SetColor(Color.New(objC.r, objC.g, objC.b, alpha))\r\n    \t\tend\r\n\t\tend\r\n    \tTask.Wait(fadeinTime)\r\n\tend\r\n\r\n\tfor k,v in pairs(objects) do\r\n\t\tobj = v\r\n\t\tif string.sub(v.name, -5) ~= \"Panel\" then\r\n\t\t\tobjC = obj:GetColor()\r\n\t\t\tobj:SetColor(Color.New(objC.r, objC.g, objC.b, 0))\r\n\t\tend\r\n\tend\r\nend \r\n\r\n\r\nfunction OnPlayerPressed(player, binding)\r\n\tif binding == toggle_binding then \r\n\t\tif uiOn == false then\r\n\t\t\tfadeInUI() \r\n\t\telse \r\n\t\t\tfadeOutUI()\r\n\t\tend\r\n\tend\r\nend\r\n\r\nfunction Tick(dt) \r\n\tif uiOn == true then \r\n\t\tlocal inOutText = script:GetCustomProperty(\"flashingText\"):WaitForObject()\r\n\t\tfor alpha = 1,0,-0.1 do \r\n    \t\tlocal c = inOutText:GetColor()\r\n\t\t\tif uiOn == false then inOutText:SetColor(Color.New(c.r, c.g, c.b, 0)) break end \r\n    \t\tinOutText:SetColor(Color.New(c.r, c.g, c.b, alpha))\r\n\t\t\tTask.Wait(fadeinTime * 4)\r\n    \tend\r\n\t\tTask.Wait(fadeinTime * 4)\r\n\t\tfor alpha = 0,1,0.1 do \r\n    \t\tlocal c = inOutText:GetColor()\r\n\t\t\tif uiOn == false then inOutText:SetColor(Color.New(c.r, c.g, c.b, 0)) break end \r\n    \t\tinOutText:SetColor(Color.New(c.r, c.g, c.b, alpha))\r\n\t\t\tTask.Wait(fadeinTime * 4)\r\n    \tend\r\n\tend\r\nend \r\n\r\nwhile not player do\r\n\tplayer = Game.GetLocalPlayer()\r\n\tTask.Wait(0.05)\r\nend\r\n\r\neventListener = player.bindingPressedEvent:Connect(OnPlayerPressed)\r\nobjects = script.parent:FindDescendantsByType(\"UIControl\")\r\n\r\n"
-        CustomParameters {
-        }
-      }
-    }
-    Assets {
-      Id: 14060330023043759337
-      Name: "BG Flat 001"
+      Id: 7876822903264054246
+      Name: "BG Flat 011"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_020"
+        AssetId: "BackgroundNoOutline_28"
       }
     }
     Assets {
@@ -1466,12 +1456,12 @@ Assets {
       }
     }
     Assets {
-      Id: 7876822903264054246
-      Name: "BG Flat 011"
+      Id: 14060330023043759337
+      Name: "BG Flat 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_28"
+        AssetId: "BackgroundNoOutline_020"
       }
     }
     PrimaryAssetId {
@@ -1481,4 +1471,3 @@ Assets {
   }
   SerializationVersion: 119
 }
-IncludesAllDependencies: true
