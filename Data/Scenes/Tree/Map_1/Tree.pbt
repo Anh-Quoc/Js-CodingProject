@@ -647,8 +647,8 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 3.75
-      Y: 4
+      X: 5.5
+      Y: 6.5
       Z: 1
     }
   }
@@ -657,7 +657,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6158544020275080816
+        Id: 15320377336413554857
       }
     }
   }
@@ -837,8 +837,8 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 3.75
-      Y: 4
+      X: 4.5
+      Y: 5
       Z: 1
     }
   }
@@ -847,7 +847,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6158544020275080816
+        Id: 15320377336413554857
       }
     }
   }
@@ -1419,14 +1419,13 @@ Objects {
   Transform {
     Location {
       X: -57.8208
-      Y: -50
       Z: -50
     }
     Rotation {
     }
     Scale {
-      X: 3.75
-      Y: 4
+      X: 6
+      Y: 7
       Z: 1
     }
   }
@@ -1435,7 +1434,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6158544020275080816
+        Id: 12915358901987505776
       }
     }
   }

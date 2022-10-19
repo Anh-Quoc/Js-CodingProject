@@ -422,6 +422,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5546474561142028667
+  Name: "Energy Distortion Line"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_trline_distortion_emissive"
+  }
+}
+Assets {
   Id: 5464520264889533008
   Name: "Fantasy Castle Stairs 01 - L"
   PlatformAssetType: 1

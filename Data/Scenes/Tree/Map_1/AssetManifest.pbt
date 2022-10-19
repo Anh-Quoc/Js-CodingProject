@@ -1,4 +1,22 @@
 Assets {
+  Id: 15320377336413554857
+  Name: "Additive Edgeline Top Fade"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_add_edgeline_sharpline_topfade"
+  }
+}
+Assets {
+  Id: 12915358901987505776
+  Name: "Additive Axis Aligned Soft Edge Z"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_additive_axis_aligned_fresnel"
+  }
+}
+Assets {
   Id: 9224750182185322729
   Name: "Energy Tube Glow"
   PlatformAssetType: 2

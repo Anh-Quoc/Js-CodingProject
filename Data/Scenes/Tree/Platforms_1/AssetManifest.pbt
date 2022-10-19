@@ -1,4 +1,31 @@
 Assets {
+  Id: 15320377336413554857
+  Name: "Additive Edgeline Top Fade"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_add_edgeline_sharpline_topfade"
+  }
+}
+Assets {
+  Id: 12915358901987505776
+  Name: "Additive Axis Aligned Soft Edge Z"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_additive_axis_aligned_fresnel"
+  }
+}
+Assets {
+  Id: 12015851346169027008
+  Name: "Electric Surface"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_electrical_surface"
+  }
+}
+Assets {
   Id: 11597592556193149105
   Name: "Hatchet - Handle"
   PlatformAssetType: 1
@@ -23,6 +50,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 4215800506936733926
+  Name: "Bubble"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_bubble"
   }
 }
 Assets {

@@ -232,13 +232,13 @@ Objects {
   Name: "KillTrigger"
   Transform {
     Location {
-      X: 1349.21094
-      Y: -3052.41016
+      X: 1383.61719
+      Y: -2900.73169
     }
     Rotation {
     }
     Scale {
-      X: 252.369385
+      X: 252.3694
       Y: 184.997726
       Z: 1
     }
@@ -40536,15 +40536,15 @@ Objects {
   Name: "Whitebox Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -7719.89453
-      Y: 15297.7051
+      X: -7685.48828
+      Y: 15449.3945
       Z: 25.2539
     }
     Rotation {
     }
     Scale {
       X: 29.4946575
-      Y: 12.7294378
+      Y: 12.7294407
       Z: 0.613961577
     }
   }
@@ -40559,7 +40559,7 @@ Objects {
     Overrides {
       Name: "ma:Building_Floor:id"
       AssetReference {
-        Id: 6158544020275080816
+        Id: 5546474561142028667
       }
     }
   }
