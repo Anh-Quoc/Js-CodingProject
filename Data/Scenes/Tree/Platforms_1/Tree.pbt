@@ -67,14 +67,14 @@ Objects {
     Location {
       X: -1707.03857
       Y: 1900
-      Z: 400
+      Z: 637.5
     }
     Rotation {
     }
     Scale {
       X: 42.75
       Y: 2.75
-      Z: 19
+      Z: 23.7500095
     }
   }
   ParentId: 6957451385402444932
@@ -597,16 +597,16 @@ Objects {
   Name: "Platform"
   Transform {
     Location {
-      X: -1250
+      X: -962.500244
       Y: 1900
-      Z: 400
+      Z: 637.499756
     }
     Rotation {
     }
     Scale {
-      X: 42.75
+      X: 48.4999962
       Y: 2.75
-      Z: 19
+      Z: 23.7500057
     }
   }
   ParentId: 6957451385402444932
@@ -678,13 +678,13 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -1973,7 +1973,7 @@ Objects {
     Location {
       X: -4350
       Y: -1043.63721
-      Z: 201.327087
+      Z: 250
     }
     Rotation {
     }
@@ -2153,7 +2153,7 @@ Objects {
     Location {
       X: -4950
       Y: -319.315674
-      Z: 11.3609619
+      Z: 50
     }
     Rotation {
     }
@@ -2213,7 +2213,7 @@ Objects {
     Location {
       X: -4296.12891
       Y: -301.00708
-      Z: 96.4449463
+      Z: 150
     }
     Rotation {
     }

@@ -17,12 +17,12 @@ Assets {
   }
 }
 Assets {
-  Id: 9224750182185322729
-  Name: "Energy Tube Glow"
+  Id: 9307878989957766555
+  Name: "Digital Clock"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "Energy_Tube_Glow"
+    AssetId: "fxmi_digital_clock"
   }
 }
 Assets {
@@ -44,21 +44,21 @@ Assets {
   }
 }
 Assets {
-  Id: 5546474561142028667
-  Name: "Energy Distortion Line"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_trline_distortion_emissive"
-  }
-}
-Assets {
   Id: 5109129970559468393
   Name: "Cube"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 3195866115574100278
+  Name: "Ceramic Tiles Square 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_ceramic_tile_square_001"
   }
 }
 Assets {
