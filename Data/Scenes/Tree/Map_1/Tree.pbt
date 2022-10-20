@@ -386,7 +386,7 @@ Objects {
         Overrides {
           Name: "ma:Shared_BaseMaterial:id"
           AssetReference {
-            Id: 9224750182185322729
+            Id: 9307878989957766555
           }
         }
       }
@@ -397,7 +397,23 @@ Objects {
         Overrides {
           Name: "ma:Shared_BaseMaterial:id"
           AssetReference {
-            Id: 5546474561142028667
+            Id: 3195866115574100278
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -524.059265
+            Y: 267.990173
+            Z: 266.947327
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 90
+            Yaw: 90
+            Roll: 4.20838165
           }
         }
       }
