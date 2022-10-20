@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17643129043706004454
+  Name: "Waterfall Top Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_waterfall_top"
+  }
+}
+Assets {
   Id: 17546982558755096284
   Name: "Whitebox Floor 01 8m x 8m"
   PlatformAssetType: 1
@@ -17,12 +26,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17384679848236598746
+  Name: "Sci-fi Wall Screen 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_scf_screen_holo_001_ref"
+  }
+}
+Assets {
   Id: 17251520926852691150
   Name: "Rubber Pattern 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_scf_rubber_panels_003_uv"
+  }
+}
+Assets {
+  Id: 17216138604640736032
+  Name: "Text 02: N"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_013"
   }
 }
 Assets {
@@ -68,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_013"
+  }
+}
+Assets {
+  Id: 15503363829137581492
+  Name: "Text 02: 2"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_028"
   }
 }
 Assets {
@@ -122,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_019"
+  }
+}
+Assets {
+  Id: 14363444765152156567
+  Name: "Watersplash Large VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_watersplash_larger"
   }
 }
 Assets {
@@ -251,12 +296,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11145905612774916316
+  Name: "Glitchy Hologram"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_hologram"
+  }
+}
+Assets {
   Id: 10534201254598460876
   Name: "Torch Fire VFX"
   PlatformAssetType: 8
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_torch_fire"
+  }
+}
+Assets {
+  Id: 10533701883535606431
+  Name: "Water Jet VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_water_jet"
   }
 }
 Assets {
@@ -302,6 +365,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "Text_011"
+  }
+}
+Assets {
+  Id: 9433992984111314213
+  Name: "Steam Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_steam_volume_vfx"
   }
 }
 Assets {
@@ -482,6 +554,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_014"
+  }
+}
+Assets {
+  Id: 6200041950743271232
+  Name: "Decal Snow Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_snow_patch_001"
   }
 }
 Assets {
@@ -716,6 +797,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_3_sided_hollw_thick_001"
+  }
+}
+Assets {
+  Id: 1736396847558857326
+  Name: "Animated Glowing Hex"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_hex_animated"
   }
 }
 Assets {

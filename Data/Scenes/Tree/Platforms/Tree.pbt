@@ -1,6 +1,65 @@
 Name: "Platforms"
 RootId: 14964634553369898440
 Objects {
+  Id: 4938110841714020563
+  Name: "Platform"
+  Transform {
+    Location {
+      X: -6950
+      Y: 250
+    }
+    Rotation {
+    }
+    Scale {
+      X: 8.5
+      Y: 7.25
+      Z: 1
+    }
+  }
+  ParentId: 14964634553369898440
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6158544020275080816
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5109129970559468393
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
   Id: 8305383933373992461
   Name: "Platform"
   Transform {
@@ -2129,7 +2188,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6158544020275080816
+        Id: 11145905612774916316
       }
     }
   }
@@ -2960,67 +3019,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 5109129970559468393
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 10859364211470410928
-  Name: "Cylinder - Rounded Small"
-  Transform {
-    Location {
-      X: -7900
-      Y: -1750
-      Z: 1150
-    }
-    Rotation {
-      Roll: 89.9999542
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 36.25
-    }
-  }
-  ParentId: 14964634553369898440
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6158544020275080816
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7763050684954085973
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -4250,14 +4248,14 @@ Objects {
   Name: "Platform"
   Transform {
     Location {
-      X: -4200
+      X: -4012.5
       Z: 100
     }
     Rotation {
     }
     Scale {
-      X: 3.75
-      Y: 4
+      X: 8.24999714
+      Y: 5.50000048
       Z: 5
     }
   }
@@ -4309,14 +4307,14 @@ Objects {
   Name: "Platform"
   Transform {
     Location {
-      X: -4900
-      Z: -100
+      X: -4850
+      Z: -50
     }
     Rotation {
     }
     Scale {
-      X: 3.75
-      Y: 4
+      X: 6.5
+      Y: 5
       Z: 5
     }
   }
@@ -4368,13 +4366,14 @@ Objects {
   Name: "Platform"
   Transform {
     Location {
-      X: -5650
+      X: -5550
+      Z: 50
     }
     Rotation {
     }
     Scale {
-      X: 3.75
-      Y: 4
+      X: 4.75
+      Y: 5
       Z: 1
     }
   }
@@ -5977,14 +5976,14 @@ Objects {
   Name: "Platform"
   Transform {
     Location {
-      X: -6907.8208
-      Y: 900
+      X: -6550
+      Y: 1150
     }
     Rotation {
     }
     Scale {
-      X: 3.75
-      Y: 4
+      X: 8.75
+      Y: 7.74999905
       Z: 1
     }
   }

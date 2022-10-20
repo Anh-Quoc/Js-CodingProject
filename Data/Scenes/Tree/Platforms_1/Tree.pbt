@@ -1,6 +1,66 @@
 Name: "Platforms_1"
 RootId: 6957451385402444932
 Objects {
+  Id: 17192368074854888525
+  Name: "Platform"
+  Transform {
+    Location {
+      X: 800
+      Y: 1550
+      Z: 1200
+    }
+    Rotation {
+    }
+    Scale {
+      X: 5.25
+      Y: 5
+      Z: 1
+    }
+  }
+  ParentId: 6957451385402444932
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6158544020275080816
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5109129970559468393
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
   Id: 17101251521867484348
   Name: "Platform"
   Transform {
@@ -479,7 +539,7 @@ Objects {
     Location {
       X: -1000
       Y: 900
-      Z: 100
+      Z: 50
     }
     Rotation {
     }
@@ -618,13 +678,13 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -656,7 +716,7 @@ Objects {
   Name: "Platform"
   Transform {
     Location {
-      X: 2150
+      X: 2100
       Z: 1750
     }
     Rotation {
@@ -716,7 +776,7 @@ Objects {
   Transform {
     Location {
       X: 1450
-      Z: 1550
+      Z: 1600
     }
     Rotation {
     }
@@ -954,15 +1014,15 @@ Objects {
   Name: "Platform"
   Transform {
     Location {
-      X: 750
-      Y: 850
-      Z: 1150
+      X: 737.5
+      Y: 812.499878
+      Z: 1100
     }
     Rotation {
     }
     Scale {
-      X: 5.25
-      Y: 4
+      X: 5.50000048
+      Y: 4.75
       Z: 1
     }
   }
@@ -1014,15 +1074,15 @@ Objects {
   Name: "Platform"
   Transform {
     Location {
-      X: 550
-      Y: 1350
-      Z: 950
+      X: 450
+      Y: 1450
+      Z: 900
     }
     Rotation {
     }
     Scale {
-      X: 5
-      Y: 4
+      X: 5.25
+      Y: 5
       Z: 1
     }
   }
@@ -1134,14 +1194,14 @@ Objects {
   Name: "Platform"
   Transform {
     Location {
-      X: 550
+      X: 450
       Y: 900
       Z: 750
     }
     Rotation {
     }
     Scale {
-      X: 5.75
+      X: 7
       Y: 4
       Z: 1
     }
@@ -1913,7 +1973,7 @@ Objects {
     Location {
       X: -4350
       Y: -1043.63721
-      Z: 201.327087
+      Z: 250
     }
     Rotation {
     }
@@ -2093,7 +2153,7 @@ Objects {
     Location {
       X: -4950
       Y: -319.315674
-      Z: 11.3609619
+      Z: 50
     }
     Rotation {
     }
@@ -2153,7 +2213,7 @@ Objects {
     Location {
       X: -4296.12891
       Y: -301.00708
-      Z: 96.4449463
+      Z: 150
     }
     Rotation {
     }
