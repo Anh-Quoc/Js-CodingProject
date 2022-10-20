@@ -43,12 +43,3 @@ Assets {
     AssetId: "sm_stone-edge_middle_6m_001"
   }
 }
-Assets {
-  Id: 2001844547562334701
-  Name: "Chain Tile 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_chain_001"
-  }
-}

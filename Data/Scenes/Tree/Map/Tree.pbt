@@ -1,6 +1,88 @@
 Name: "Map"
 RootId: 4184141684511417588
 Objects {
+  Id: 63304232928648039
+  Name: "Checkpoint Flag"
+  Transform {
+    Location {
+      X: 9050
+      Y: 2650
+      Z: 1950
+    }
+    Rotation {
+      Yaw: -89.9999619
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4184141684511417588
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3405717314255278325
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 6158544020275080816
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -418.007629
+            Y: 261.890808
+            Z: 140.956436
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16620516859478907632
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Checkpoint Flag"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9050
+            Y: -350
+            Z: 1950
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999542
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17181500319873305240
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
   Id: 11084951948845577691
   Name: "Thruster Flame VFX"
   Transform {
@@ -136,9 +218,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9900
-            Y: 150
-            Z: 1900
+            X: 800
+            Y: 300
+            Z: 1400
           }
         }
         Overrides {
@@ -256,6 +338,14 @@ Objects {
             Id: 6158544020275080816
           }
         }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -418.007629
+            Y: 261.890808
+            Z: 140.956436
+          }
+        }
       }
     }
     ParameterOverrideMap {
@@ -268,15 +358,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9050
-            Y: -350
-            Z: 1950
+            X: 300
+            Y: -800.000244
+            Z: 1400
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -89.9999619
+            Yaw: -89.9999695
           }
         }
         Overrides {
@@ -859,7 +949,6 @@ Objects {
     }
   }
   ParentId: 4184141684511417588
-  ChildIds: 15062241518446889464
   ChildIds: 14048501636861350433
   ChildIds: 12332050053916603484
   UnregisteredParameters {
@@ -965,66 +1054,6 @@ Objects {
     }
     BreadcrumbTemplate {
     }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 15062241518446889464
-  Name: "Platform"
-  Transform {
-    Location {
-      X: -57.8208
-      Y: 54.3000488
-      Z: -50
-    }
-    Rotation {
-    }
-    Scale {
-      X: 3.75
-      Y: 4
-      Z: 1
-    }
-  }
-  ParentId: 12029391243304072939
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6158544020275080816
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5109129970559468393
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"

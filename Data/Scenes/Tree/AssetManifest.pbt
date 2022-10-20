@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17384679848236598746
+  Name: "Sci-fi Wall Screen 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_scf_screen_holo_001_ref"
+  }
+}
+Assets {
   Id: 17251520926852691150
   Name: "Rubber Pattern 01"
   PlatformAssetType: 2
@@ -26,12 +35,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17216138604640736032
+  Name: "Text 02: N"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_013"
+  }
+}
+Assets {
   Id: 17191145098810985436
   Name: "Text 03: R"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_017"
+  }
+}
+Assets {
+  Id: 17178304963105262665
+  Name: "Basic Hologram"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_basic_hologram"
   }
 }
 Assets {
@@ -68,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_013"
+  }
+}
+Assets {
+  Id: 15503363829137581492
+  Name: "Text 02: 2"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_028"
   }
 }
 Assets {
@@ -248,6 +284,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "Text_004"
+  }
+}
+Assets {
+  Id: 11145905612774916316
+  Name: "Glitchy Hologram"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_hologram"
   }
 }
 Assets {
@@ -716,6 +761,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_3_sided_hollw_thick_001"
+  }
+}
+Assets {
+  Id: 1736396847558857326
+  Name: "Animated Glowing Hex"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_hex_animated"
   }
 }
 Assets {
