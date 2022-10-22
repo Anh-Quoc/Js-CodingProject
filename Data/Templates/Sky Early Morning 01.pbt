@@ -1,5 +1,5 @@
 Assets {
-  Id: 2939632757466850525
+  Id: 6813244613183814491
   Name: "Sky Early Morning 01"
   PlatformAssetType: 5
   TemplateAsset {
@@ -49,7 +49,7 @@ Assets {
             Z: 100
           }
           Rotation {
-            Yaw: -44.4454651
+            Yaw: -44.3717194
           }
           Scale {
             X: 1

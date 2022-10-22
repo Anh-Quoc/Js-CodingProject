@@ -125,7 +125,7 @@ for i = 1, NUM_LINES do
 	lineTemplates[i]:SetColor(Color.TRANSPARENT)
 end
 
-Events.Connect("KF", OnKill)
+Events.Connect("PlayerKilled", OnKill)
 
 if SHOW_JOIN_AND_LEAVE then
 	Game.playerJoinedEvent:Connect(OnPlayerJoined)

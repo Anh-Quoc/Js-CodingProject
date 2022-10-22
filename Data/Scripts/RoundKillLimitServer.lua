@@ -37,7 +37,7 @@ if KILL_LIMIT <= 0 then
 end
 
 -- nil Tick(float)
--- Watches for a team hitting the maximum score and ends the round
+-- Watches for a player hitting the maximum kills and ends the round
 function Tick(deltaTime)
 	if not ABGS.IsGameStateManagerRegistered() then
 		return

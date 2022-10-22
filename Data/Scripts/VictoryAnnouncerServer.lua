@@ -26,15 +26,15 @@ function OnPlayerVictory(player)
 	Events.BroadcastToAllPlayers("BannerMessage", string.format("%s wins!", player.name))
 end
 
--- nil OnPlayerVictory(Player)
+-- nil OnTeamVictory(int)
 -- Announces the winning team
 function OnTeamVictory(team)
 	Events.BroadcastToAllPlayers("BannerMessage", string.format("Team %d wins!", team))
 end
 
--- nil OnPlayerVictory(Player)
+-- nil OnTieVictory()
 -- Announces that there was a tie
-function OnTieVictory(winners)
+function OnTieVictory()
 	Events.BroadcastToAllPlayers("BannerMessage", "Tie!")
 end
 

@@ -1,5 +1,5 @@
 Assets {
-  Id: 714839591765825575
+  Id: 10837054656949254476
   Name: "Lobby Start Respawn Players"
   PlatformAssetType: 5
   TemplateAsset {
@@ -15,16 +15,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1607954139662087694
+        ParentId: 15560188646105002552
         ChildIds: 7689294975764800308
         UnregisteredParameters {
           Overrides {
             Name: "cs:Period"
-            Float: 1.5
-          }
-          Overrides {
-            Name: "cs:RespawnOnRoundStart"
-            Bool: true
+            Float: 3
           }
           Overrides {
             Name: "cs:Period:tooltip"
@@ -98,8 +94,8 @@ Assets {
       }
     }
     PrimaryAssetId {
-      AssetType: "TemplateAssetRef"
-      AssetId: "Lobby_Start_Respawn_Players"
+      AssetType: "None"
+      AssetId: "None"
     }
   }
   SerializationVersion: 119

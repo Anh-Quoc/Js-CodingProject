@@ -1,5 +1,5 @@
 Assets {
-  Id: 17154454822903296868
+  Id: 10026852603863081338
   Name: "Lobby Start Reset KD"
   PlatformAssetType: 5
   TemplateAsset {

@@ -1,5 +1,5 @@
 Assets {
-  Id: 165700934996347194
+  Id: 7578515324579368544
   Name: "Lobby Required Players"
   PlatformAssetType: 5
   TemplateAsset {
@@ -20,7 +20,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:RequiredPlayers"
-            Int: 2
+            Int: 5
           }
           Overrides {
             Name: "cs:CountdownTime"

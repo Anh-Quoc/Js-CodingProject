@@ -1,5 +1,5 @@
 Assets {
-  Id: 12110771893887422485
+  Id: 2356208754083229324
   Name: "Game State Display"
   PlatformAssetType: 5
   TemplateAsset {
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1519193322060715142
+        ParentId: 15560188646105002552
         ChildIds: 1605561193072132470
         UnregisteredParameters {
           Overrides {
@@ -28,11 +28,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ShowDuringRound"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "cs:ShowDuringRoundEnd"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:ShowStateName:tooltip"
@@ -111,7 +111,7 @@ Assets {
       }
       Objects {
         Id: 11701566102101910365
-        Name: "GameStateRoundTimeDisplayClient"
+        Name: "GameStateDisplayClient"
         Transform {
           Location {
           }
@@ -171,7 +171,7 @@ Assets {
       }
       Objects {
         Id: 6621926890735536071
-        Name: "UI Container"
+        Name: "Canvas"
         Transform {
           Location {
           }
@@ -250,9 +250,9 @@ Assets {
         }
         Control {
           Width: 200
-          Height: 50
-          UIX: -15
-          UIY: -1015
+          Height: 60
+          UIX: -380
+          UIY: -30
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -266,12 +266,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomright"
+                Value: "mc:euianchor:bottomcenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomright"
+                Value: "mc:euianchor:bottomcenter"
               }
             }
           }
@@ -315,19 +315,16 @@ Assets {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          UseParentWidth: true
-          UseParentHeight: true
           Text {
-            Label: "State"
             Color {
               R: 1
               G: 1
               B: 1
               A: 1
             }
-            Size: 20
+            Size: 30
             Justification {
-              Value: "mc:etextjustify:left"
+              Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
             Font {
@@ -336,12 +333,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middlecenter"
+                Value: "mc:euianchor:middleleft"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middlecenter"
+                Value: "mc:euianchor:middleleft"
               }
             }
           }
@@ -385,8 +382,6 @@ Assets {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          UseParentWidth: true
-          UseParentHeight: true
           Text {
             Label: "00:00"
             Color {
@@ -395,9 +390,9 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 20
+            Size: 30
             Justification {
-              Value: "mc:etextjustify:right"
+              Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
             Font {
@@ -406,12 +401,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middlecenter"
+                Value: "mc:euianchor:middleright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middlecenter"
+                Value: "mc:euianchor:middleright"
               }
             }
           }

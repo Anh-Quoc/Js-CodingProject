@@ -1,5 +1,5 @@
 Assets {
-  Id: 15016807997413534948
+  Id: 10733084386643114928
   Name: "Player Count Display"
   PlatformAssetType: 5
   TemplateAsset {
@@ -20,7 +20,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:ShowTotalPlayers"
-            Bool: false
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -137,7 +137,7 @@ Assets {
       }
       Objects {
         Id: 5203687057323110666
-        Name: "UI Container"
+        Name: "Canvas Control"
         Transform {
           Location {
           }
@@ -231,8 +231,8 @@ Assets {
         Control {
           Width: 125
           Height: 40
-          UIX: 25
-          UIY: 50
+          UIX: -20
+          UIY: -20
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -246,12 +246,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:bottomright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:bottomright"
               }
             }
           }
@@ -293,7 +293,6 @@ Assets {
         Control {
           Width: 30
           Height: 40
-          UIX: -5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -420,7 +419,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -447,12 +446,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middleleft"
+                Value: "mc:euianchor:middleright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middleleft"
+                Value: "mc:euianchor:middleright"
               }
             }
           }
@@ -515,12 +514,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middleleft"
+                Value: "mc:euianchor:middleright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middleright"
+                Value: "mc:euianchor:middleleft"
               }
             }
           }

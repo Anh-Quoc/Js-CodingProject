@@ -1,8 +1,6 @@
-GameId: "78AB07EA44C2B768D36554B9F8C9921C"
+GameId: "E419674C496A6781F1901AB17438DD08"
 DisplayName: "Js-CodingProject"
 GameSerializationVersion: 119
-SkyVersion: 2
-FloorVersion: 2
 Framework: "Community"
-SourceGameId: "f99123ecb06747d4bcee730400555d64"
+SourceGameId: "f3e92b3e674b499799c28a46c2c38111"
 StorageVersion: 2

@@ -1,5 +1,5 @@
 Assets {
-  Id: 8004073782264411660
+  Id: 5820595568184680215
   Name: "Compass"
   PlatformAssetType: 5
   TemplateAsset {
@@ -179,7 +179,7 @@ Assets {
       }
       Objects {
         Id: 5645031635635957428
-        Name: "UI Container"
+        Name: "Canvas"
         Transform {
           Location {
           }
@@ -268,7 +268,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 1000
+          Width: 1400
           Height: 30
           RenderTransformPivot {
             Anchor {

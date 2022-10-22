@@ -1,6 +1,6 @@
 Assets {
   Id: 6322885574366977805
-  Name: "RoundTeamscoreLimitServer"
+  Name: "RoundTeamScoreLimitServer"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {

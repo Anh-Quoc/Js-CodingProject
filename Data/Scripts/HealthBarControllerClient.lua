@@ -20,13 +20,10 @@ local AS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local TEXT_BOX = script:GetCustomProperty("TextBox"):WaitForObject()
 local PROGRESS_BAR = script:GetCustomProperty("ProgressBar"):WaitForObject()
-local AMMO_PANEL = script:GetCustomProperty("AmmoPanel"):WaitForObject()
-local AMMO_TEXT = script:GetCustomProperty("AmmoText"):WaitForObject()
 
 -- User exposed properties
 local SHOW_NUMBER = COMPONENT_ROOT:GetCustomProperty("ShowNumber")
 local SHOW_MAXIMUM = COMPONENT_ROOT:GetCustomProperty("ShowMaximum")
-local SHOW_AMMO = COMPONENT_ROOT:GetCustomProperty("ShowAmmo")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 -- Player GetViewedPlayer()
@@ -41,16 +38,6 @@ function GetViewedPlayer()
     return LOCAL_PLAYER
 end
 
--- Equipment GetWeapon()
--- Returns weapon that player is using
-function GetWeapon(player)
-	for i,v in ipairs(player:GetEquipment()) do
-		if v:IsA("Weapon") then
-			return v
-		end
-	end
-end
-
 function Tick(deltaTime)
     local player = GetViewedPlayer()
     if player then
@@ -63,16 +50,6 @@ function Tick(deltaTime)
             else
                 TEXT_BOX.text = string.format("%.0f", player.hitPoints)
             end
-        end
-		
-		if SHOW_AMMO then
-			local weapon = GetWeapon(player)
-			if weapon ~= nil then
-				AMMO_TEXT.text = tostring(weapon.currentAmmo)
-			end
-            AMMO_PANEL.visibility = Visibility.INHERIT
-        else
-            AMMO_PANEL.visibility = Visibility.FORCE_OFF
         end
     end
 end

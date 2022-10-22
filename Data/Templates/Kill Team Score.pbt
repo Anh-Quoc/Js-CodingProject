@@ -1,5 +1,5 @@
 Assets {
-  Id: 8830361112412788624
+  Id: 6276519599194061314
   Name: "Kill Team Score"
   PlatformAssetType: 5
   TemplateAsset {
@@ -46,7 +46,7 @@ Assets {
       }
       Objects {
         Id: 8671689074824295135
-        Name: "TeamKillScoreServer"
+        Name: "KillTeamScoreServer"
         Transform {
           Location {
           }

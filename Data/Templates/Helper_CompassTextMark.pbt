@@ -7,12 +7,8 @@ Assets {
       RootId: 8166223341670121941
       Objects {
         Id: 8166223341670121941
-        Name: "Helper_CompassMarker"
+        Name: "Helper_CompassTextMark"
         Transform {
-          Location {
-          }
-          Rotation {
-          }
           Scale {
             X: 1
             Y: 1
@@ -32,8 +28,8 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 20
-          Height: 25
+          Width: 30
+          Height: 40
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -47,7 +43,7 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 12
+            Size: 18
             Justification {
               Value: "mc:etextjustify:center"
             }

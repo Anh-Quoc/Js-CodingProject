@@ -1,5 +1,5 @@
 Assets {
-  Id: 10226583373665735959
+  Id: 15737558181553231706
   Name: "Round Kill Limit"
   PlatformAssetType: 5
   TemplateAsset {
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10412379021265105746
+        ParentId: 3315708265746411648
         ChildIds: 9244366846504141008
         UnregisteredParameters {
           Overrides {
@@ -24,7 +24,7 @@ Assets {
           }
           Overrides {
             Name: "cs:KillLimit:tooltip"
-            String: "When a player reaches this many points, the round ends."
+            String: "When a player reaches this many kills, the round ends"
           }
         }
         Collidable_v2 {

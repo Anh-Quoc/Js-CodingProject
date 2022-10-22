@@ -21,8 +21,7 @@ local ABGS = require(script:GetCustomProperty("API"))
 -- nil OnGameStateChanged(int, int, bool, float)
 -- Handles resetting team scores when the game state switches to lobby
 function OnGameStateChanged(oldState, newState, hasDuration, endTime)
-	if (newState == ABGS.GAME_STATE_LOBBY and oldState ~= ABGS.GAME_STATE_LOBBY) or
-	(newState ~= ABGS.GAME_STATE_LOBBY and oldState == ABGS.GAME_STATE_LOBBY) then
+	if newState == ABGS.GAME_STATE_LOBBY and oldState ~= ABGS.GAME_STATE_LOBBY then
 		for _, player in pairs(Game.GetPlayers()) do
 			player.kills = 0
 			player.deaths = 0

@@ -1,5 +1,5 @@
 Assets {
-  Id: 17602874323132382533
+  Id: 4402405895179786635
   Name: "Kill Feed"
   PlatformAssetType: 5
   TemplateAsset {
@@ -321,7 +321,7 @@ Assets {
           Width: 500
           Height: 300
           UIX: -25
-          UIY: 60
+          UIY: 25
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -352,8 +352,8 @@ Assets {
       }
     }
     PrimaryAssetId {
-      AssetType: "None"
-      AssetId: "None"
+      AssetType: "TemplateAssetRef"
+      AssetId: "Kill_Feed"
     }
   }
   SerializationVersion: 119

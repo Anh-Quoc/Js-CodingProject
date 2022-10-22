@@ -1,5 +1,5 @@
 Assets {
-  Id: 3683989391263939746
+  Id: 11185108759918118981
   Name: "Basic Game State Manager"
   PlatformAssetType: 5
   TemplateAsset {
@@ -29,7 +29,7 @@ Assets {
           }
           Overrides {
             Name: "cs:RoundHasDuration"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "cs:RoundDuration"
@@ -200,7 +200,7 @@ Assets {
       }
       Objects {
         Id: 7470680187010079913
-        Name: "GameStateManagerClient"
+        Name: "BasicGameStateManagerClient"
         Transform {
           Location {
           }

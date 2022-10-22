@@ -1,5 +1,5 @@
 Assets {
-  Id: 12216790719116463228
+  Id: 12703745954049682290
   Name: "Nameplates"
   PlatformAssetType: 5
   TemplateAsset {
@@ -28,7 +28,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ShowOnSelf"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "cs:ShowOnTeammates"
@@ -44,7 +44,7 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDistanceOnEnemies"
-            Float: 5000
+            Float: 2000
           }
           Overrides {
             Name: "cs:ShowOnDeadPlayers"
