@@ -4850,191 +4850,12 @@ Assets {
       }
     }
     Assets {
-      Id: 11721941323670792327
-      Name: "Additive Edgeline Top Fade"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxmi_add_edgeline_sharpline_topfade"
-      }
-    }
-    Assets {
-      Id: 677189626347195361
-      Name: "Cube"
-      PlatformAssetType: 5
-      TemplateAsset {
-        ObjectBlock {
-          RootId: 12101961748309606553
-          Objects {
-            Id: 12101961748309606553
-            Name: "Cube"
-            Transform {
-              Scale {
-                X: 1
-                Y: 1
-                Z: 1
-              }
-            }
-            ParentId: 4781671109827199097
-            Collidable_v2 {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            Visible_v2 {
-              Value: "mc:evisibilitysetting:inheritfromparent"
-            }
-            CameraCollidable {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            EditorIndicatorVisibility {
-              Value: "mc:eindicatorvisibility:visiblewhenselected"
-            }
-            CoreMesh {
-              MeshAsset {
-                Id: 12095835209017042614
-              }
-              Teams {
-                IsTeamCollisionEnabled: true
-                IsEnemyCollisionEnabled: true
-              }
-              StaticMesh {
-                Physics {
-                  Mass: 100
-                  LinearDamping: 0.01
-                }
-                BoundsScale: 1
-              }
-            }
-            Relevance {
-              Value: "mc:eproxyrelevance:critical"
-            }
-            NetworkRelevanceDistance {
-              Value: "mc:eproxyrelevance:critical"
-            }
-            IsReplicationEnabledByDefault: true
-          }
-        }
-        PrimaryAssetId {
-          AssetType: "None"
-          AssetId: "None"
-        }
-      }
-    }
-    Assets {
-      Id: 12095835209017042614
-      Name: "Cube"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_002"
-      }
-    }
-    Assets {
-      Id: 3533190463953898497
-      Name: "Fantasy Chest Treasure Pile 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_fantasy_chest_treasure_pile_001_ref"
-      }
-    }
-    Assets {
-      Id: 4315540626537441108
-      Name: "Object Fantasy Treasure Chest Open 04 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_object_fantasy_treasure_chest_open_04_Cue_ref"
-      }
-    }
-    Assets {
-      Id: 3929808165339934488
-      Name: "Object Fantasy Treasure Chest Open 03 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_object_fantasy_treasure_chest_open_03_Cue_ref"
-      }
-    }
-    Assets {
-      Id: 12468155253248836719
-      Name: "BasicChestControllerClient"
-      PlatformAssetType: 3
-      TextAsset {
-        Text: "--[[\r\nCopyright 2020 Manticore Games, Inc.\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated\r\ndocumentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the\r\nrights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit\r\npersons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the\r\nSoftware.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE\r\nWARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\r\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\r\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\r\n--]]\r\n\r\n-- Internal custom properties\r\nlocal ROTATION_ROOT = script:GetCustomProperty(\"RotationRoot\"):WaitForObject()\r\nlocal OPEN_SOUND = script:GetCustomProperty(\"OpenSound\"):WaitForObject()\r\nlocal CLOSE_SOUND = script:GetCustomProperty(\"CloseSound\"):WaitForObject()\r\n\r\n-- Variable\r\nlocal previousRotation = 0.0\r\n\r\n-- float GetChestRotation()\r\n-- Gives you the current rotation of the chest lid\r\nfunction GetChestRotation()\r\n\treturn ROTATION_ROOT:GetRotation().x / 90.0\r\nend\r\n\r\nfunction Tick(deltaTime)\r\n\tlocal chestLidRotation = GetChestRotation()\r\n\r\n\tif chestLidRotation ~= 0.0 and previousRotation == 0.0 and OPEN_SOUND then\r\n\t\tOPEN_SOUND:Play()\r\n\tend\r\n\r\n\tif chestLidRotation == 0.0 and previousRotation ~= 0.0 and CLOSE_SOUND then\r\n\t\tCLOSE_SOUND:Play()\r\n\tend\r\n\r\n\tpreviousRotation = chestLidRotation\r\nend\r\n"
-        CustomParameters {
-        }
-      }
-    }
-    Assets {
-      Id: 9188351867310556903
-      Name: "Fantasy Chest Lid 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_fantasy_chest_lid_001_ref"
-      }
-    }
-    Assets {
-      Id: 3753434009625901326
-      Name: "Fantasy Chest Base 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_fantasy_chest_001_ref"
-      }
-    }
-    Assets {
-      Id: 3481758651789323561
-      Name: "Frame Outline Thin 001"
+      Id: 10571500252027593587
+      Name: "Icon Close"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameOutline_020"
-      }
-    }
-    Assets {
-      Id: 2281296676843799821
-      Name: "Fantasy Scroll 008"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Scroll_008"
-      }
-    }
-    Assets {
-      Id: 16532880832873788683
-      Name: "BG Flat 002"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_019"
-      }
-    }
-    Assets {
-      Id: 17082422435037134864
-      Name: "BG Flat 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_020"
-      }
-    }
-    Assets {
-      Id: 4261377164658729719
-      Name: "Baloo 2 Extra Bold"
-      PlatformAssetType: 28
-      PrimaryAsset {
-        AssetType: "FontAssetRef"
-        AssetId: "Baloo2ExtraBold_ref"
-      }
-    }
-    Assets {
-      Id: 447830115368535550
-      Name: "Amarante"
-      PlatformAssetType: 28
-      PrimaryAsset {
-        AssetType: "FontAssetRef"
-        AssetId: "AmaranteRegular_ref"
+        AssetId: "Icon_Close"
       }
     }
     Assets {
@@ -5047,119 +4868,111 @@ Assets {
       }
     }
     Assets {
-      Id: 10571500252027593587
-      Name: "Icon Close"
+      Id: 447830115368535550
+      Name: "Amarante"
+      PlatformAssetType: 28
+      PrimaryAsset {
+        AssetType: "FontAssetRef"
+        AssetId: "AmaranteRegular_ref"
+      }
+    }
+    Assets {
+      Id: 4261377164658729719
+      Name: "Baloo 2 Extra Bold"
+      PlatformAssetType: 28
+      PrimaryAsset {
+        AssetType: "FontAssetRef"
+        AssetId: "Baloo2ExtraBold_ref"
+      }
+    }
+    Assets {
+      Id: 17082422435037134864
+      Name: "BG Flat 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "Icon_Close"
+        AssetId: "BackgroundNoOutline_020"
       }
     }
     Assets {
-      Id: 18337571046162097081
-      Name: "ListRandomQuest"
-      PlatformAssetType: 31
-      DataTableAsset {
-        Columns {
-          Name: "Question"
-          Type: 3
-        }
-        Columns {
-          Name: "Answer_1"
-          Type: 3
-        }
-        Columns {
-          Name: "Answer_2"
-          Type: 3
-        }
-        Columns {
-          Name: "Answer_3"
-          Type: 3
-        }
-        Columns {
-          Name: "Answer_4"
-          Type: 3
-        }
-        Rows {
-          RawData: "1"
-          RawData: "6"
-          RawData: ""
-          RawData: ""
-          RawData: ""
-        }
-        Rows {
-          RawData: "2"
-          RawData: "7"
-          RawData: ""
-          RawData: ""
-          RawData: ""
-        }
-        Rows {
-          RawData: "3"
-          RawData: "8"
-          RawData: ""
-          RawData: ""
-          RawData: ""
-        }
-        Rows {
-          RawData: "4"
-          RawData: "9"
-          RawData: ""
-          RawData: ""
-          RawData: ""
-        }
-        Rows {
-          RawData: "5"
-          RawData: "10"
-          RawData: ""
-          RawData: ""
-          RawData: ""
-        }
+      Id: 16532880832873788683
+      Name: "BG Flat 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundNoOutline_019"
       }
     }
     Assets {
-      Id: 18138289351027980804
-      Name: "QuestionDatabase"
-      PlatformAssetType: 31
-      DataTableAsset {
-        Columns {
-          Name: "Question"
-          Type: 3
-        }
-        Columns {
-          Name: "Answer"
-          Type: 3
-        }
-        Rows {
-          RawData: "Firrst Question"
-          RawData: "First Answer"
-        }
-        Rows {
-          RawData: "Second Question"
-          RawData: "Second Answer"
-        }
-        Rows {
-          RawData: "Third Question"
-          RawData: "Third Answer"
-        }
-        Rows {
-          RawData: "Four Question"
-          RawData: "Four Answer"
-        }
-        Rows {
-          RawData: "Five Question"
-          RawData: "Five Answer"
-        }
+      Id: 2281296676843799821
+      Name: "Fantasy Scroll 008"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Equip_Scroll_008"
       }
     }
     Assets {
-      Id: 13299577736527901176
-      Name: "QuestionControl"
-      PlatformAssetType: 3
-      TextAsset {
-        Text: "local TIME_FREZZ_CHEST = 1000\r\nlocal COIN_FOR_CORRECT_ANSWER = 10\r\n\r\n\r\n\r\n\r\nlocal QUESTION_DATABASE = require(script:GetCustomProperty(\"QuestionDatabase\"))\r\n\r\nQuestionTable = {}\r\nAnswerTable = {}\r\nlocal RowOfDatabase = 0\r\n\r\nlocal function loadQuestionFromDatabase()\r\n    for key, value in ipairs(QUESTION_DATABASE) do\r\n        -- print(key, value.index, value.Question .. \" - \" .. value.Answer)\r\n        QuestionTable[RowOfDatabase] = value.Question\r\n        AnswerTable[RowOfDatabase] = value.Answer\r\n        RowOfDatabase = RowOfDatabase + 1\r\n    end\r\n    RowOfDatabase = RowOfDatabase - 1\r\nend\r\n\r\nloadQuestionFromDatabase()\r\n\r\n----------------------------- CREATE QUESTION OBJECT -------------------------------\r\n\r\nQuestionWithRandomAnswer = {\r\n    question = \"\",\r\n    trueAnswer = \"\",\r\n    listAnswer = {}\r\n}\r\n\r\nfunction QuestionWithRandomAnswer:checkUniqueAnswer(someRandomAnswer)\r\n    for i, answer in pairs(self.listAnswer) do\r\n        if someRandomAnswer == answer then\r\n            return false\r\n        end\r\n    end\r\n    self.listAnswer[#self.listAnswer + 1] = someRandomAnswer\r\n    return true\r\nend\r\n\r\nfunction QuestionWithRandomAnswer:genRandomAnswer(answerTable)\r\n    for i = 1, 3, 1 do\r\n        local indexRandom = math.random(0, #answerTable)\r\n        while (self:checkUniqueAnswer(answerTable[indexRandom]) == false) do\r\n            indexRandom = math.random(0, #answerTable)\r\n        end\r\n    end\r\nend\r\n\r\nfunction QuestionWithRandomAnswer:new(o, questionTable, answerTable)\r\n    o = o or {}\r\n    self.__index = self\r\n    setmetatable(o, self)\r\n\r\n    local indexOfQuestion = math.random(0, 3)\r\n    self.question = questionTable[indexOfQuestion]\r\n    self.trueAnswer = answerTable[indexOfQuestion]\r\n    self.listAnswer[#self.listAnswer + 1] = self.trueAnswer\r\n    self:genRandomAnswer(answerTable)\r\n    self:randomIndexAnswer()\r\n    return o\r\nend\r\n\r\nfunction QuestionWithRandomAnswer:getQuestion()\r\n    return self.question\r\nend\r\n\r\nfunction QuestionWithRandomAnswer:randomIndexAnswer()\r\n    local newArrAnswer = {}\r\n    for i, value in pairs(self.listAnswer) do\r\n        local randomIndex = math.random(1, 4)\r\n        while newArrAnswer[randomIndex] ~= nil do\r\n            randomIndex = math.random(1, 4)\r\n        end\r\n        newArrAnswer[randomIndex] = value\r\n    end\r\n    self.listAnswer = newArrAnswer\r\nend\r\n\r\nfunction QuestionWithRandomAnswer:getQuestion()\r\n    return self.question\r\nend\r\n\r\nfunction QuestionWithRandomAnswer:checkCorrectAnswer(yourAnswer)\r\n    return yourAnswer == self.trueAnswer\r\nend\r\n\r\nfunction QuestionWithRandomAnswer:getListAnswer()\r\n    return self.listAnswer\r\nend\r\n\r\nlocal newQuestion = QuestionWithRandomAnswer:new(nil, QuestionTable, AnswerTable)\r\n\r\n--------------------------------------- ACTIVE UI PANEL -------------------------------\r\nlocal function setActiveUIQuestion(condition)\r\n    if condition == true then\r\n        QUEST_PANEL_UI.visibility = Visibility.FORCE_ON\r\n    else\r\n        QUEST_PANEL_UI.visibility = Visibility.FORCE_OFF\r\n    end\r\nend\r\n\r\nlocal function setActiveCursor(condition)\r\n    UI.SetCursorVisible(condition)\r\n    UI.SetCanCursorInteractWithUI(condition)\r\n    UI.SetCursorLockedToViewport(condition)\r\nend\r\n\r\nfunction OnInteracted(theTrigger, player)\r\n    openChest()\r\n    Task.Wait(0.4)\r\n    setActiveUIQuestion(true)\r\n    setActiveCursor(true)\r\nend\r\n\r\nlocal TRIGGER = script:GetCustomProperty(\"Trigger\"):WaitForObject()\r\nTRIGGER.interactedEvent:Connect(OnInteracted)\r\nTRIGGER.isInteractable = true\r\n\r\n--------------------------------------- UI PANEL ------------------------------------\r\nQUEST_PANEL_UI = script:GetCustomProperty(\"QuestPanelUI\"):WaitForObject()\r\n\r\nlocal QUESTION_TEXT_BOX = script:GetCustomProperty(\"QuestionTextBox\"):WaitForObject()\r\nlocal ANSWER_TEXT_BOX_1 = script:GetCustomProperty(\"AnswerTextBox_1\"):WaitForObject()\r\nlocal ANSWER_TEXT_BOX_2 = script:GetCustomProperty(\"AnswerTextBox_2\"):WaitForObject()\r\nlocal ANSWER_TEXT_BOX_3 = script:GetCustomProperty(\"AnswerTextBox_3\"):WaitForObject()\r\nlocal ANSWER_TEXT_BOX_4 = script:GetCustomProperty(\"AnswerTextBox_4\"):WaitForObject()\r\n\r\n-- local CLOSE_QUESTION_BUTTON = script:GetCustomProperty(\"CloseQuestionButton\"):WaitForObject()\r\n-- CLOSE_QUESTION_BUTTON.clickedEvent:Connect(CLOSE_QUESTION_BUTTON_CLICKED)\r\n-- function CLOSE_QUESTION_BUTTON_CLICKED()\r\n-- \302\240 \302\240 QUEST_PANEL_UI.visibility = Visibility.FORCE_OFF\r\n-- end\r\n\r\nQUEST_PANEL_UI.visibility = Visibility.FORCE_OFF\r\nQUESTION_TEXT_BOX.text = newQuestion:getQuestion()\r\nANSWER_TEXT_BOX_1.text = newQuestion:getListAnswer()[1]\r\nANSWER_TEXT_BOX_2.text = newQuestion:getListAnswer()[2]\r\nANSWER_TEXT_BOX_3.text = newQuestion:getListAnswer()[3]\r\nANSWER_TEXT_BOX_4.text = newQuestion:getListAnswer()[4]\r\n\r\n------------------------------------ Chest --------------------------------------\r\nlocal CHEST= script:GetCustomProperty(\"Chest\"):WaitForObject()\r\nlocal ROTATION_ROOT = script:GetCustomProperty(\"RotationRoot\"):WaitForObject()\r\nlocal CHEST_LOCK = script:GetCustomProperty(\"ChestLock\"):WaitForObject()\r\nlocal TIME_TO_LOCK_CHEST = 4\r\n\r\nlocal targetDoorRotation = 0.0\r\nlocal RESET_ON_ROUND_START = true\r\nlocal SPEED = 600\r\nlocal CHEST_OPEN = false\r\n\r\nfunction openChest()\r\n\r\n    if CHEST_OPEN == false then\r\n        CHEST_OPEN = true\r\n        OpenChestLid()\r\n    end\r\nend\r\n\r\nfunction SetTargetRotation(rotation)\r\n\ttargetDoorRotation = rotation\r\n\tROTATION_ROOT:RotateTo(Rotation.New(90.0 * rotation, 0.0, 0.0), 90.0 * math.abs(targetDoorRotation - GetChestLidRotation()) / SPEED, true)\r\nend\r\n\r\nfunction OpenChestLid()\r\n    CHEST_OPEN = true\r\n    SetTargetRotation(1.0)\r\nend\r\n\r\nfunction CloseChestLid()\r\n    CHEST_OPEN = false\r\n\tSetTargetRotation(0.0)\r\nend\r\n\r\nfunction GetChestLidRotation()\r\n\treturn ROTATION_ROOT:GetRotation().x / 90.0\r\nend\r\n\r\nfunction ResetChestLid()\r\n    SetCurrentRotation(0.0)\r\n    TRIGGER.isInteractable = true\r\nend\r\n\r\nfunction OnRoundStart()\r\n\tResetChestLid()\r\nend\r\n\r\nfunction activateChestLock()\r\n    CHEST_LOCK.visibility = Visibility.FORCE_ON\r\n    TRIGGER.isInteractable = false\r\n    Task.Wait(TIME_TO_LOCK_CHEST)\r\n    CHEST_LOCK.visibility = Visibility.FORCE_OFF\r\n    TRIGGER.isInteractable = true\r\nend\r\n\r\nfunction removeChest()\r\n    CHEST:Destroy()\r\nend\r\n\r\nif RESET_ON_ROUND_START then\r\n\tGame.roundStartEvent:Connect(OnRoundStart)\r\nend\r\n---------------------------------------------------------------------------------\r\nlocal UITEXT_COIN = script:GetCustomProperty(\"UITextCoin\"):WaitForObject()\r\n\r\nlocal function setNewCoint()\r\n    local oldValue = tonumber(UITEXT_COIN.text)\r\n    local newValue = oldValue + COIN_FOR_CORRECT_ANSWER\r\n    UITEXT_COIN.text = tostring(newValue)\r\nend\r\n\r\n------------------------------------ Button Answer -------------------------------\r\nlocal ANSWER_BUTTON_1 = script:GetCustomProperty(\"AnswerButton_1\"):WaitForObject()\r\nlocal ANSWER_BUTTON_2 = script:GetCustomProperty(\"AnswerButton_2\"):WaitForObject()\r\nlocal ANSWER_BUTTON_3 = script:GetCustomProperty(\"AnswerButton_3\"):WaitForObject()\r\nlocal ANSWER_BUTTON_4 = script:GetCustomProperty(\"AnswerButton_4\"):WaitForObject()\r\n\r\nfunction correctAnswer()\r\n    setNewCoint()\r\n    CloseChestLid()\r\n    Task.Wait(0.5)\r\n    removeChest()\r\n    --- Luu tien vao database\r\n    --- Xoa\r\nend\r\n\r\nfunction wrongAnswer()\r\n    CloseChestLid()\r\n    activateChestLock()\r\nend\r\n\r\nfunction ANSWER_BUTTON_1_CLICKED()\r\n    setActiveUIQuestion(false)\r\n    setActiveCursor(false)\r\n    if newQuestion:checkCorrectAnswer(ANSWER_TEXT_BOX_1.text) == true then\r\n        correctAnswer()\r\n    else\r\n        wrongAnswer()\r\n    end\r\nend\r\n\r\nfunction ANSWER_BUTTON_2_CLICKED()\r\n    setActiveUIQuestion(false)\r\n    setActiveCursor(false)\r\n    if newQuestion:checkCorrectAnswer(ANSWER_TEXT_BOX_2.text) == true then\r\n        correctAnswer()\r\n    else\r\n        wrongAnswer()\r\n    end\r\nend\r\n\r\nfunction ANSWER_BUTTON_3_CLICKED()\r\n    setActiveUIQuestion(false)\r\n    setActiveCursor(false)\r\n    if newQuestion:checkCorrectAnswer(ANSWER_TEXT_BOX_3.text) == true then\r\n        correctAnswer()\r\n    else\r\n        wrongAnswer()\r\n    end\r\nend\r\n\r\nfunction ANSWER_BUTTON_4_CLICKED()\r\n    setActiveUIQuestion(false)\r\n    setActiveCursor(false)\r\n    if newQuestion:checkCorrectAnswer(ANSWER_TEXT_BOX_4.text) == true then\r\n        correctAnswer()\r\n    else\r\n        wrongAnswer()\r\n    end\r\nend\r\n\r\nANSWER_BUTTON_1.clickedEvent:Connect(ANSWER_BUTTON_1_CLICKED)\r\nANSWER_BUTTON_2.clickedEvent:Connect(ANSWER_BUTTON_2_CLICKED)\r\nANSWER_BUTTON_3.clickedEvent:Connect(ANSWER_BUTTON_3_CLICKED)\r\nANSWER_BUTTON_4.clickedEvent:Connect(ANSWER_BUTTON_4_CLICKED)\r\n"
-        CustomParameters {
-        }
+      Id: 3481758651789323561
+      Name: "Frame Outline Thin 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameOutline_020"
+      }
+    }
+    Assets {
+      Id: 3753434009625901326
+      Name: "Fantasy Chest Base 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_fantasy_chest_001_ref"
+      }
+    }
+    Assets {
+      Id: 9188351867310556903
+      Name: "Fantasy Chest Lid 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_fantasy_chest_lid_001_ref"
+      }
+    }
+    Assets {
+      Id: 3929808165339934488
+      Name: "Object Fantasy Treasure Chest Open 03 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_object_fantasy_treasure_chest_open_03_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 4315540626537441108
+      Name: "Object Fantasy Treasure Chest Open 04 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_object_fantasy_treasure_chest_open_04_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 3533190463953898497
+      Name: "Fantasy Chest Treasure Pile 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_fantasy_chest_treasure_pile_001_ref"
+      }
+    }
+    Assets {
+      Id: 11721941323670792327
+      Name: "Additive Edgeline Top Fade"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxmi_add_edgeline_sharpline_topfade"
       }
     }
     PrimaryAssetId {
@@ -5169,4 +4982,3 @@ Assets {
   }
   SerializationVersion: 119
 }
-IncludesAllDependencies: true
