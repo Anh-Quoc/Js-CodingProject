@@ -275,7 +275,12 @@ Assets {
           Overrides {
             Name: "cs:UITextCoin"
             ObjectReference {
-              SelfId: 12003806299820542099
+              SelfId: 4376003964777109452
+              SubObjectId: 2729611865382761084
+              InstanceId: 2986026417591449453
+              TemplateId: 3671377012180307125
+              NestedInstanceIds: 7176867007917408385
+              OuterTemplateIds: 10035398994750791372
             }
           }
           Overrides {
@@ -324,16 +329,16 @@ Assets {
         Name: "Trigger"
         Transform {
           Location {
-            X: 200
-            Y: -700
-            Z: 100
+            X: 205.932129
+            Y: -646.662
+            Z: 79.3957901
           }
           Rotation {
           }
           Scale {
-            X: 2.25
-            Y: 1.75
-            Z: 1.5
+            X: 1.42353511
+            Y: 1.25
+            Z: 1.0879159
           }
         }
         ParentId: 4843279013548209659
