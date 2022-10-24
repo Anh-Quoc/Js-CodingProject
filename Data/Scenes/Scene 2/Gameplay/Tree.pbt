@@ -1297,9 +1297,11 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 16262257363834610921
+  Id: 12510832673815440207
   Name: "SpawnPoints"
   Transform {
+    Location {
+    }
     Scale {
       X: 1
       Y: 1
@@ -1307,28 +1309,30 @@ Objects {
     }
   }
   ParentId: 15916159628794207712
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16485651706868240294
-      value {
-        Overrides {
-          Name: "Name"
-          String: "SpawnPoints"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1108.09229
-            Y: 31187.4902
-            Z: 2868.0415
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14059331315785578455
-    }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "SpawnPoints"
+  }
+  InstanceHistory {
+    SelfId: 12510832673815440207
+    SubobjectId: 16485651706868240294
+    InstanceId: 16262257363834610921
+    TemplateId: 14059331315785578455
+    WasRoot: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12325253119680757916
@@ -1599,8 +1603,6 @@ Objects {
   Name: "GameSetup"
   Transform {
     Location {
-      X: -133.916016
-      Y: 15459.8018
     }
     Rotation {
     }

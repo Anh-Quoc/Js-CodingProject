@@ -71,12 +71,39 @@ Assets {
   }
 }
 Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
   Id: 10845438701832633057
   Name: "Branches Cluster Big"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gen_branches_big_001"
+  }
+}
+Assets {
+  Id: 10522222064658400397
+  Name: "Edgeline Wavy Object Fade Advanced"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_add_edgeline_local"
+  }
+}
+Assets {
+  Id: 10158550849353672364
+  Name: "Cube - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_test_001"
   }
 }
 Assets {
@@ -89,12 +116,30 @@ Assets {
   }
 }
 Assets {
+  Id: 8766032951383490347
+  Name: "Cube - Chamfered Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_chamfer"
+  }
+}
+Assets {
   Id: 8401357009975835397
   Name: "Branches Cluster Medium"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gen_branches_medium_001"
+  }
+}
+Assets {
+  Id: 7970222735081279493
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
   }
 }
 Assets {

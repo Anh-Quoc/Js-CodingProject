@@ -5,14 +5,11 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: -23511.1172
-      Y: 56798.6758
-      Z: 2456.54346
+      X: -5233.45947
+      Y: -23350.207
+      Z: 1070.81262
     }
     Rotation {
-      Pitch: -5.64093
-      Yaw: -83.5667725
-      Roll: 0.0873727277
     }
     Scale {
       X: 1
@@ -165,14 +162,11 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: -22381.957
-      Y: 57114.7031
-      Z: 2524.89526
+      X: -4965.99219
+      Y: -23063.959
+      Z: 1070.81262
     }
     Rotation {
-      Pitch: -5.64093
-      Yaw: -83.5667725
-      Roll: 0.0873727277
     }
     Scale {
       X: 1
@@ -325,14 +319,11 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: -22624.9844
-      Y: 57038.3438
-      Z: 2514.89941
+      X: -4965.99219
+      Y: -23643.6836
+      Z: 1070.81262
     }
     Rotation {
-      Pitch: -5.64093
-      Yaw: -83.5667725
-      Roll: 0.0873727277
     }
     Scale {
       X: 1
@@ -485,14 +476,11 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: -23227.8242
-      Y: 56883.9961
-      Z: 2470.49707
+      X: -4744.30957
+      Y: -23350.207
+      Z: 1070.81262
     }
     Rotation {
-      Pitch: -5.64093
-      Yaw: -83.5667725
-      Roll: 0.0873727277
     }
     Scale {
       X: 1
@@ -645,9 +633,9 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: -22945.8203
-      Y: 56968.7422
-      Z: 2500.43213
+      X: -10816.1357
+      Y: 1791.16772
+      Z: 9827.05078
     }
     Rotation {
       Pitch: -5.64093
@@ -679,7 +667,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -802,9 +790,9 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: -11660.3164
-      Y: 4721.71875
-      Z: -1271.68848
+      X: -10571.9795
+      Y: 1690.40259
+      Z: 9827.05078
     }
     Rotation {
       Pitch: 1.07878733
@@ -836,7 +824,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -962,9 +950,9 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: -12100.0703
-      Y: 4781.06
-      Z: -1288.93115
+      X: -11044.0117
+      Y: 1908.40039
+      Z: 9827.05078
     }
     Rotation {
       Pitch: 1.07878733
@@ -996,7 +984,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1122,14 +1110,14 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: -11929.0039
-      Y: 4537.14
-      Z: -1290.78943
+      X: -10379.3652
+      Y: 1608.67212
+      Z: 9827.05078
     }
     Rotation {
       Pitch: 1.07878733
-      Yaw: 24.5321312
-      Roll: 1.44006217
+      Yaw: -3.67095947
+      Roll: 1.44006205
     }
     Scale {
       X: 1
@@ -1156,7 +1144,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1174,9 +1162,9 @@ Objects {
   Name: "Cylinder"
   Transform {
     Location {
-      X: -0.00477484148
-      Y: -0.00519897323
-      Z: -3.21819971e-05
+      X: 22.9923229
+      Y: -12.8123236
+      Z: -0.755186856
     }
     Rotation {
       Pitch: 5.35381603
@@ -1282,9 +1270,9 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: -11831.3008
-      Y: 4965.55029
-      Z: -1269.81091
+      X: -4965.99707
+      Y: -23350.2109
+      Z: 1129.04688
     }
     Rotation {
       Pitch: 1.07878733
@@ -1316,7 +1304,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1442,9 +1430,9 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: -12002.2246
-      Y: 5209.38086
-      Z: -1270.5791
+      X: -4965.99707
+      Y: -23350.2109
+      Z: 1129.04688
     }
     Rotation {
       Pitch: 1.07878733
@@ -1476,7 +1464,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1599,9 +1587,9 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: 41527.6953
-      Y: 9668.63867
-      Z: 2432.32983
+      X: -4965.99707
+      Y: -23350.2109
+      Z: 1129.04688
     }
     Rotation {
       Pitch: 2.04905664e-05
@@ -1633,7 +1621,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1777,14 +1765,13 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: 41151.7539
-      Y: 9905.15234
-      Z: 2426.30884
+      X: -4965.99707
+      Y: -23350.2109
+      Z: 1129.04688
     }
     Rotation {
       Pitch: 2.04905664e-05
-      Yaw: -0.00010245281
-      Roll: -6.00311296e-06
+      Yaw: -9.15527344e-05
     }
     Scale {
       X: 1
@@ -1811,7 +1798,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1835,9 +1822,9 @@ Objects {
   Name: "Cylinder"
   Transform {
     Location {
-      X: -0.000508335885
-      Y: -0.00615895819
-      Z: -0.000124082348
+      X: -7.49578094
+      Y: 30.4751663
+      Z: 1.34085417
     }
     Rotation {
       Pitch: 5.35381603
@@ -1955,9 +1942,9 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: 41206.6836
-      Y: 9612.72656
-      Z: 2410.08325
+      X: -4965.99707
+      Y: -23350.2109
+      Z: 1129.04688
     }
     Rotation {
       Pitch: 2.04905664e-05
@@ -1989,7 +1976,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2133,9 +2120,9 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: 41472.7773
-      Y: 9960.94141
-      Z: 2448.5686
+      X: -4965.99707
+      Y: -23350.2109
+      Z: 1129.04688
     }
     Rotation {
       Pitch: 2.04905664e-05
@@ -2167,7 +2154,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2311,9 +2298,9 @@ Objects {
   Name: "Equipment Spawner"
   Transform {
     Location {
-      X: 41418.0352
-      Y: 10253.3359
-      Z: 2462.1687
+      X: -4965.99707
+      Y: -23350.2109
+      Z: 1129.04688
     }
     Rotation {
       Pitch: 2.04905664e-05
@@ -2345,7 +2332,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"

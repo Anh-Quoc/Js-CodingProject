@@ -5,14 +5,8 @@ Objects {
   Name: "_Spellshock Weapons Example Setup"
   Transform {
     Location {
-      X: 27089.8066
-      Y: -36891.3164
-      Z: 3326.95947
     }
     Rotation {
-      Pitch: -2.76757193
-      Yaw: 76.1817169
-      Roll: 3.19943023
     }
     Scale {
       X: 1
