@@ -1,37 +1,10 @@
 Assets {
-  Id: 17965850983566478317
-  Name: "Additive Soft Edge"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_additive_edgefade"
-  }
-}
-Assets {
-  Id: 17643129043706004454
-  Name: "Waterfall Top Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_waterfall_top"
-  }
-}
-Assets {
   Id: 17546982558755096284
   Name: "Whitebox Floor 01 8m x 8m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_gen_whitebox_floor_001_8x8"
-  }
-}
-Assets {
-  Id: 17384679848236598746
-  Name: "Sci-fi Wall Screen 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_scf_screen_holo_001_ref"
   }
 }
 Assets {
@@ -44,30 +17,12 @@ Assets {
   }
 }
 Assets {
-  Id: 17216138604640736032
-  Name: "Text 02: N"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_013"
-  }
-}
-Assets {
   Id: 17191145098810985436
   Name: "Text 03: R"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_017"
-  }
-}
-Assets {
-  Id: 17137724152214719135
-  Name: "Plasma Ball Projectile VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_plasmaball_projectile"
   }
 }
 Assets {
@@ -98,30 +53,12 @@ Assets {
   }
 }
 Assets {
-  Id: 15503363829137581492
-  Name: "Text 02: 2"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_028"
-  }
-}
-Assets {
   Id: 15401975236813654651
   Name: "Trim Bottom 8m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_trim_bottom_6m_002"
-  }
-}
-Assets {
-  Id: 15320377336413554857
-  Name: "Additive Edgeline Top Fade"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_add_edgeline_sharpline_topfade"
   }
 }
 Assets {
@@ -161,15 +98,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14363444765152156567
-  Name: "Watersplash Large VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_watersplash_larger"
-  }
-}
-Assets {
   Id: 14351382449226716079
   Name: "Arch Fancy 3m"
   PlatformAssetType: 1
@@ -194,24 +122,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_001"
-  }
-}
-Assets {
-  Id: 14027714588873078937
-  Name: "Bone Human Scattered 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_scatter_01_ref"
-  }
-}
-Assets {
-  Id: 12915358901987505776
-  Name: "Additive Axis Aligned Soft Edge Z"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_additive_axis_aligned_fresnel"
   }
 }
 Assets {
@@ -287,39 +197,12 @@ Assets {
   }
 }
 Assets {
-  Id: 11518296315512644579
-  Name: "Text 02: E"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_004"
-  }
-}
-Assets {
-  Id: 11145905612774916316
-  Name: "Glitchy Hologram"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_hologram"
-  }
-}
-Assets {
   Id: 10534201254598460876
   Name: "Torch Fire VFX"
   PlatformAssetType: 8
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_torch_fire"
-  }
-}
-Assets {
-  Id: 10533701883535606431
-  Name: "Water Jet VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_water_jet"
   }
 }
 Assets {
@@ -359,51 +242,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9657360534625210486
-  Name: "Text 02: L"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_011"
-  }
-}
-Assets {
-  Id: 9433992984111314213
-  Name: "Steam Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_steam_volume_vfx"
-  }
-}
-Assets {
-  Id: 9407244998060078030
-  Name: "Text 02: R"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_017"
-  }
-}
-Assets {
-  Id: 9224750182185322729
-  Name: "Energy Tube Glow"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "Energy_Tube_Glow"
-  }
-}
-Assets {
-  Id: 9084347529145268875
-  Name: "\"Cyberpunk EDM Fusion\" Music Construction Kit (Sections) 01"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_cyberpunk_edm_fusion_sections_kit_ref"
-  }
-}
-Assets {
   Id: 9082968859364711157
   Name: "Candle Flame VFX"
   PlatformAssetType: 1
@@ -431,24 +269,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8245120376588578993
-  Name: "Text 02: Y"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_024"
-  }
-}
-Assets {
-  Id: 8189350372352697835
-  Name: "Craftsman Part - Wall 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_part_wall_001"
-  }
-}
-Assets {
   Id: 8169848131924464338
   Name: "Stained Glass 01"
   PlatformAssetType: 2
@@ -458,30 +278,12 @@ Assets {
   }
 }
 Assets {
-  Id: 8033800268553733566
-  Name: "\"Winter Snowflakes\" Music Construction Kit (Sections) 01"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_winter_snowflakes_sections_kit_ref"
-  }
-}
-Assets {
   Id: 7753733828038124515
   Name: "Metal Old Beaten Gold 02"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_gold_002"
-  }
-}
-Assets {
-  Id: 7696152444875007482
-  Name: "Text 02: I"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_008"
   }
 }
 Assets {
@@ -512,24 +314,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6498508533256084889
-  Name: "Text 02: O"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_014"
-  }
-}
-Assets {
-  Id: 6481470571139596201
-  Name: "Bone Human Hand 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_hand_01_ref"
-  }
-}
-Assets {
   Id: 6358471158957620124
   Name: "Craftsman Stairs 01 Railing Post"
   PlatformAssetType: 1
@@ -557,15 +341,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6200041950743271232
-  Name: "Decal Snow Patch"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_snow_patch_001"
-  }
-}
-Assets {
   Id: 6158544020275080816
   Name: "Rubber Tiles 01"
   PlatformAssetType: 2
@@ -584,33 +359,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6131526872761491117
-  Name: "Bone Human Skull Pile 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_skull_pile_01_ref"
-  }
-}
-Assets {
-  Id: 5984581068094244651
-  Name: "Magic Projectile VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_magic_projectile"
-  }
-}
-Assets {
-  Id: 5820814878219487604
-  Name: "Bone Human Skull 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_skull_01_ref"
-  }
-}
-Assets {
   Id: 5726587732553827492
   Name: "Cone - Truncated Hollow Wide"
   PlatformAssetType: 1
@@ -620,66 +368,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5546474561142028667
-  Name: "Energy Distortion Line"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_trline_distortion_emissive"
-  }
-}
-Assets {
-  Id: 5260517811722457013
-  Name: "Bone Human Skull Pile 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_skull_pile_02_ref"
-  }
-}
-Assets {
-  Id: 5243016694348934370
-  Name: "Text 02: A"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_000"
-  }
-}
-Assets {
-  Id: 5228225134868522939
-  Name: "Text 02: U"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_020"
-  }
-}
-Assets {
   Id: 5078519495863649643
   Name: "Square Column Base 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_column_square_bottom_002"
-  }
-}
-Assets {
-  Id: 4970141624997315531
-  Name: "Bone Human Scattered 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_scatter_02_ref"
-  }
-}
-Assets {
-  Id: 4935748092853047732
-  Name: "Text 02: !"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_037"
   }
 }
 Assets {
@@ -746,39 +440,12 @@ Assets {
   }
 }
 Assets {
-  Id: 2484192878762533124
-  Name: "Text 02: S"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_018"
-  }
-}
-Assets {
   Id: 2339799599977760459
   Name: "Pyramid - 4-Sided Truncated"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_truncated_001"
-  }
-}
-Assets {
-  Id: 2315945035883699834
-  Name: "Text 02: W"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_022"
-  }
-}
-Assets {
-  Id: 2260173044441703369
-  Name: "Text 02: T"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_019"
   }
 }
 Assets {
@@ -800,15 +467,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1736396847558857326
-  Name: "Animated Glowing Hex"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_hex_animated"
-  }
-}
-Assets {
   Id: 1678796883504718284
   Name: "Text 03: H"
   PlatformAssetType: 1
@@ -827,30 +485,12 @@ Assets {
   }
 }
 Assets {
-  Id: 1140124302506120288
-  Name: "Text 02: D"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_003"
-  }
-}
-Assets {
   Id: 1137112816547272582
   Name: "Cylinder"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
-  }
-}
-Assets {
-  Id: 838879184240184240
-  Name: "Bone Human Pile Straight 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_pile_str_02_ref"
   }
 }
 Assets {

@@ -1,6 +1,111 @@
 Name: "Map_1"
 RootId: 15378138520008998405
 Objects {
+  Id: 13946901085600440731
+  Name: "Glass Elevator - Grizzly Mods"
+  Transform {
+    Location {
+      X: -8200
+      Y: -2450
+      Z: 50
+    }
+    Rotation {
+      Yaw: -100.000046
+    }
+    Scale {
+      X: 1.25
+      Y: 1.25
+      Z: 1.25
+    }
+  }
+  ParentId: 15378138520008998405
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2317192854290266802
+      value {
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 1.3660373e-05
+            Roll: 180
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 5.2
+            Y: 5.2
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 305
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3922077421534619657
+      value {
+        Overrides {
+          Name: "ma:Shared_Detail1:id"
+          AssetReference {
+            Id: 15320377336413554857
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13168077458513838648
+      value {
+        Overrides {
+          Name: "ma:Shared_Detail1:id"
+          AssetReference {
+            Id: 18028417676133628250
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14721983665630168959
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Glass Elevator - Grizzly Mods"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8200
+            Y: 50
+            Z: 50
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.25
+            Y: 1.25
+            Z: 1.25
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -100.000076
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8943411935497837347
+    }
+  }
+}
+Objects {
   Id: 10761887900518783048
   Name: "Flame SFX"
   Transform {
