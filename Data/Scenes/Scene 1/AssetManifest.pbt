@@ -395,15 +395,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9084347529145268875
-  Name: "\"Cyberpunk EDM Fusion\" Music Construction Kit (Sections) 01"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_cyberpunk_edm_fusion_sections_kit_ref"
-  }
-}
-Assets {
   Id: 9082968859364711157
   Name: "Candle Flame VFX"
   PlatformAssetType: 1
@@ -455,15 +446,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_glass_stained_manticore_001"
-  }
-}
-Assets {
-  Id: 8033800268553733566
-  Name: "\"Winter Snowflakes\" Music Construction Kit (Sections) 01"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_winter_snowflakes_sections_kit_ref"
   }
 }
 Assets {
