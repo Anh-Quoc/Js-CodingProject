@@ -90,50 +90,6 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 13110117433267455585
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: -443.007812
-      Y: 16262.3232
-      Z: 422.617188
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1611092256492287211
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
-    SpawnEffectsTemplate {
-    }
-  }
-  InstanceHistory {
-    SelfId: 5510544459133349231
-    SubobjectId: 17724383186779442874
-    InstanceId: 17529949106665998948
-    TemplateId: 18076115853999996100
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
   Id: 7574928819103179371
   Name: "Kill Zone"
   Transform {
