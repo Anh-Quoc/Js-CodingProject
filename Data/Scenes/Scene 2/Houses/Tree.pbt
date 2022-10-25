@@ -3642,3 +3642,87 @@ Objects {
   }
   IsReplicationEnabledByDefault: true
 }
+Objects {
+  Id: 650111202361184176
+  Name: "StoneWoodHouse"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9682405868037380037
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8289368552671239222
+      value {
+        Overrides {
+          Name: "ma:Building_Roof:id"
+          AssetReference {
+            Id: 11436915511146686152
+          }
+        }
+        Overrides {
+          Name: "ma:Building_Roof:smart"
+          Bool: false
+        }
+        Overrides {
+          Name: "ma:Building_Roof:color"
+          Color {
+            R: 0.669999957
+            G: 0.359403968
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8719973933328519604
+      value {
+        Overrides {
+          Name: "Name"
+          String: "StoneWoodHouse"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -28638.2285
+            Y: -28466.4219
+            Z: 2337.36182
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 13.9347458
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9478261814626415223
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}

@@ -131,6 +131,8 @@ Objects {
         Value: "mc:erespawnmode:farthestfromotherplayers"
       }
       StartSpawned: true
+      SpawnKey: "Map1"
+      RespawnKey: "Map1"
     }
   }
   NetworkRelevanceDistance {
@@ -167,6 +169,7 @@ Objects {
   Settings {
     GameSettings {
       RagdollOnDeath: true
+      EnablePlayerStorage: true
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }
@@ -272,6 +275,7 @@ Objects {
       PlayerStorageMode {
         Value: "mc:eplayerstoragemode:disabled"
       }
+      EnableConcurrentPlayerStorage: true
       EnableNetworkedEventsQueuing: true
     }
   }

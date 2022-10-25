@@ -3139,7 +3139,7 @@ Assets {
     }
     Assets {
       Id: 14765187174778751549
-      Name: "Bark Pine 01"
+      Name: "Bark Pine Advanced 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
@@ -3175,7 +3175,7 @@ Assets {
     }
     Assets {
       Id: 6259296403083935137
-      Name: "Bark Oak 01"
+      Name: "Bark Oak Advanced 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
@@ -3193,7 +3193,7 @@ Assets {
     }
     Assets {
       Id: 18107313418399080956
-      Name: "Bark Redwood 01"
+      Name: "Bark Redwood Advanced 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
