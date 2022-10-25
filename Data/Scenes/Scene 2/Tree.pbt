@@ -18,6 +18,13 @@ Objects {
   ChildIds: 7722913420832920574
   ChildIds: 5497679742653587332
   ChildIds: 17861113248083051103
+  ChildIds: 15526626847499422095
+  ChildIds: 10027358535479629624
+  ChildIds: 5969861991901036525
+  ChildIds: 16626855116030737922
+  ChildIds: 9371167362585070395
+  ChildIds: 17317624130108919115
+  ChildIds: 10106329912614482386
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,6 +42,46 @@ Objects {
     Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 10106329912614482386
+  Name: "Temple"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15549126831813712044
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Temple"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1328.18774
+            Y: -20671.5742
+            Z: 1131.27466
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -50.9527283
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7667338406488881756
+    }
+  }
 }
 Objects {
   Id: 17317624130108919115
