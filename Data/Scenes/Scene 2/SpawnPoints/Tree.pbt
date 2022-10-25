@@ -85,9 +85,9 @@ Objects {
   Name: "Spawn Point Team 1 B"
   Transform {
     Location {
-      X: -294.507019
-      Y: -21921.6309
-      Z: 966.209961
+      X: -560.838562
+      Y: -22321.5273
+      Z: 1326.75916
     }
     Rotation {
     }
@@ -125,9 +125,9 @@ Objects {
   Name: "Spawn Point Team 1 A"
   Transform {
     Location {
-      X: -294.507019
-      Y: -21921.6309
-      Z: 966.209961
+      X: -832.526855
+      Y: -22321.5273
+      Z: 1414.35657
     }
     Rotation {
     }

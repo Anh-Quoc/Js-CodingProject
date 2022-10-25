@@ -84,9 +84,9 @@ Objects {
   Name: "WeponAttack"
   Transform {
     Location {
-      X: -1010.25171
-      Y: -21400.7031
-      Z: 1052.55872
+      X: -1637.86035
+      Y: -22081.1914
+      Z: 1408.85559
     }
     Rotation {
     }
@@ -101,7 +101,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -138,9 +138,9 @@ Objects {
   Name: "SpawnPointAttack"
   Transform {
     Location {
-      X: -294.507019
-      Y: -21921.6309
-      Z: 966.209961
+      X: -922.115662
+      Y: -22602.1191
+      Z: 1322.50684
     }
     Rotation {
     }
@@ -155,7 +155,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -209,9 +209,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -2382.55176
-            Y: -20596.0195
-            Z: 908.691345
+            X: -3010.1604
+            Y: -21276.5078
+            Z: 1264.98816
           }
         }
       }
@@ -243,7 +243,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -297,7 +297,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
