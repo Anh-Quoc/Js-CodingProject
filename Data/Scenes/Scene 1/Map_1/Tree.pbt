@@ -126,8 +126,10 @@ Objects {
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
+    SpawnKey: "Map1"
     SpawnEffectsTemplate {
     }
+    ShouldDecrowdPlayers: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -164,8 +166,10 @@ Objects {
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
+    SpawnKey: "Map1"
     SpawnEffectsTemplate {
     }
+    ShouldDecrowdPlayers: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -1518,8 +1522,10 @@ Objects {
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
+    SpawnKey: "Map1"
     SpawnEffectsTemplate {
     }
+    ShouldDecrowdPlayers: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"

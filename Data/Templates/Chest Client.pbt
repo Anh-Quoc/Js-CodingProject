@@ -49,6 +49,8 @@ Assets {
         Name: "Chest Template"
         Transform {
           Location {
+            X: -250
+            Y: 900
           }
           Rotation {
           }
@@ -65,7 +67,7 @@ Assets {
         ChildIds: 1462067988358265699
         ChildIds: 1949677331822969169
         ChildIds: 13235211246292685053
-        ChildIds: 5809786582112070881
+        ChildIds: 3657745851667860490
         UnregisteredParameters {
           Overrides {
             Name: "cs:OpenOnce"
@@ -173,6 +175,8 @@ Assets {
         Name: "QuestionControl"
         Transform {
           Location {
+            X: 250
+            Y: -900
           }
           Rotation {
           }
@@ -187,7 +191,13 @@ Assets {
           Overrides {
             Name: "cs:QuestionDatabase"
             AssetReference {
-              Id: 4403840721734172590
+              Id: 18138289351027980804
+            }
+          }
+          Overrides {
+            Name: "cs:ListRandomQuest"
+            AssetReference {
+              Id: 18337571046162097081
             }
           }
           Overrides {
@@ -265,7 +275,12 @@ Assets {
           Overrides {
             Name: "cs:UITextCoin"
             ObjectReference {
-              SelfId: 7890921916485512185
+              SelfId: 4376003964777109452
+              SubObjectId: 2729611865382761084
+              InstanceId: 2986026417591449453
+              TemplateId: 3671377012180307125
+              NestedInstanceIds: 7176867007917408385
+              OuterTemplateIds: 10035398994750791372
             }
           }
           Overrides {
@@ -284,12 +299,6 @@ Assets {
             Name: "cs:Chest"
             ObjectReference {
               SubObjectId: 4843279013548209659
-            }
-          }
-          Overrides {
-            Name: "cs:UIListQuestion"
-            ObjectReference {
-              SelfId: 3701471858393082423
             }
           }
         }
@@ -320,16 +329,16 @@ Assets {
         Name: "Trigger"
         Transform {
           Location {
-            X: 197.727844
-            Y: -651.027588
-            Z: 73.6807938
+            X: 205.932129
+            Y: -646.662
+            Z: 79.3957901
           }
           Rotation {
           }
           Scale {
-            X: 1.42510891
-            Y: 1.11050606
-            Z: 1.09142029
+            X: 1.42353511
+            Y: 1.25
+            Z: 1.0879159
           }
         }
         ParentId: 4843279013548209659
@@ -369,6 +378,8 @@ Assets {
         Name: "Quest Panel UI "
         Transform {
           Location {
+            X: 250
+            Y: -900
           }
           Rotation {
           }
@@ -4778,66 +4789,69 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 5809786582112070881
-        Name: "ChestLock"
+        Id: 3657745851667860490
+        Name: "Cube"
         Transform {
-          Location {
-            X: 200
-            Y: -650
-            Z: 100
-          }
-          Rotation {
-          }
           Scale {
-            X: 1.25
-            Y: 1.5
-            Z: 1.5
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 4843279013548209659
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11721941323670792327
+        TemplateInstance {
+          ParameterOverrideMap {
+            key: 12101961748309606553
+            value {
+              Overrides {
+                Name: "Name"
+                String: "ChestLock"
+              }
+              Overrides {
+                Name: "Scale"
+                Vector {
+                  X: 1.25
+                  Y: 1.5
+                  Z: 1.5
+                }
+              }
+              Overrides {
+                Name: "Position"
+                Vector {
+                  X: 200
+                  Y: -650
+                  Z: 100
+                }
+              }
+              Overrides {
+                Name: "ma:Shared_BaseMaterial:id"
+                AssetReference {
+                  Id: 11721941323670792327
+                }
+              }
+              Overrides {
+                Name: "Collidable"
+                Enum {
+                  Value: "mc:ecollisionsetting:forceon"
+                }
+              }
+              Overrides {
+                Name: "Visible"
+                Enum {
+                  Value: "mc:evisibilitysetting:forceoff"
+                }
+              }
+              Overrides {
+                Name: "Rotation"
+                Rotator {
+                }
+              }
             }
           }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12095835209017042614
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
+          TemplateAsset {
+            Id: 677189626347195361
           }
         }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        IsReplicationEnabledByDefault: true
       }
     }
     Assets {
@@ -4955,15 +4969,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_fantasy_chest_treasure_pile_001_ref"
-      }
-    }
-    Assets {
-      Id: 12095835209017042614
-      Name: "Cube"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_002"
       }
     }
     Assets {
