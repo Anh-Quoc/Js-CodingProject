@@ -23,6 +23,7 @@ Objects {
   ChildIds: 5969861991901036525
   ChildIds: 16626855116030737922
   ChildIds: 9371167362585070395
+  ChildIds: 17317624130108919115
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -40,6 +41,43 @@ Objects {
     Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 17317624130108919115
+  Name: "Respawn on left SafeZone"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4154824205297641589
+      value {
+        Overrides {
+          Name: "cs:ObjectMiddle"
+          ObjectReference {
+            SelfId: 15526626847499422095
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8086561757784099903
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Respawn on left SafeZone"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13581522820541773373
+    }
+  }
 }
 Objects {
   Id: 9371167362585070395
