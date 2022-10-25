@@ -1,9 +1,6 @@
 local TIME_FREZZ_CHEST = 1000
 local COIN_FOR_CORRECT_ANSWER = 10
 
-
-
-
 local QUESTION_DATABASE = require(script:GetCustomProperty("QuestionDatabase"))
 
 QuestionTable = {}
@@ -12,54 +9,100 @@ local RowOfDatabase = 0
 
 local function loadQuestionFromDatabase()
     for key, value in ipairs(QUESTION_DATABASE) do
-        -- print(key, value.index, value.Question .. " - " .. value.Answer)
-        QuestionTable[RowOfDatabase] = value.Question
-        AnswerTable[RowOfDatabase] = value.Answer
-        RowOfDatabase = RowOfDatabase + 1
+        if value.Question ~= "" then
+        --     print(key, value.Question .. " - " .. value.trueAnswer)
+        -- if value.Question ~= "" then
+        -- end
+            QuestionTable[RowOfDatabase] = value.Question
+            AnswerTable[value.Question] = {}
+            AnswerTable[value.Question].trueAnswer = value.trueAnswer
+            AnswerTable[value.Question].falseAnswer1 = value.falseAnswer1
+            AnswerTable[value.Question].falseAnswer2 = value.falseAnswer2
+            AnswerTable[value.Question].falseAnswer3 = value.falseAnswer3
+            RowOfDatabase = RowOfDatabase + 1
+        end
     end
     RowOfDatabase = RowOfDatabase - 1
 end
 
 loadQuestionFromDatabase()
 
+----------------------------- QUESTION HAVE RANDOM -----------------------------
+local listQuestionShow = {}
+local UILIST_QUESTION = script:GetCustomProperty("UIListQuestion"):WaitForObject()
+
+local function loadQuestionHaveRandom()
+    local stringListQuestion = UILIST_QUESTION.text
+    for s in string.gmatch(stringListQuestion, "[^|]+") do
+        listQuestionShow[#listQuestionShow + 1] = s
+    end
+end
+
+local function updateQuestionHaveRandom()
+    local newStringListQuestion = "|"
+    for i, question in pairs(listQuestionShow) do
+        newStringListQuestion = newStringListQuestion .. question .. "|"
+    end
+    UILIST_QUESTION.text = newStringListQuestion
+end
 ----------------------------- CREATE QUESTION OBJECT -------------------------------
 
 QuestionWithRandomAnswer = {
     question = "",
     trueAnswer = "",
-    listAnswer = {}
+    listAnswer = {},
+    listQuestionHaveRandom = {}
 }
 
-function QuestionWithRandomAnswer:checkUniqueAnswer(someRandomAnswer)
-    for i, answer in pairs(self.listAnswer) do
-        if someRandomAnswer == answer then
+function QuestionWithRandomAnswer:checkUniqueQuestion(someRandomQuestion)
+    for i, question in pairs(self.listQuestionHaveRandom) do
+        if someRandomQuestion == question then
             return false
         end
     end
-    self.listAnswer[#self.listAnswer + 1] = someRandomAnswer
     return true
 end
 
-function QuestionWithRandomAnswer:genRandomAnswer(answerTable)
-    for i = 1, 3, 1 do
-        local indexRandom = math.random(0, #answerTable)
-        while (self:checkUniqueAnswer(answerTable[indexRandom]) == false) do
-            indexRandom = math.random(0, #answerTable)
-        end
+function QuestionWithRandomAnswer:genRandomQuestion(questionTable)
+    local indexOfQuestion = math.random(1, #questionTable)
+    self.question = questionTable[indexOfQuestion]
+
+    while (self:checkUniqueQuestion(self.question) == false) do
+        indexOfQuestion = math.random(1, #questionTable)
+        self.question = questionTable[indexOfQuestion]
     end
+    self.listQuestionHaveRandom[#self.listQuestionHaveRandom + 1] = self.question
 end
 
-function QuestionWithRandomAnswer:new(o, questionTable, answerTable)
+function QuestionWithRandomAnswer:randomIndexAnswer()
+    local newArrAnswer = {}
+    for i, value in pairs(self.listAnswer) do
+        local randomIndex = math.random(1, #self.listAnswer)
+        while newArrAnswer[randomIndex] ~= nil do
+            randomIndex = math.random(1, #self.listAnswer)
+        end
+        newArrAnswer[randomIndex] = value
+    end
+    self.listAnswer = newArrAnswer
+end
+
+function QuestionWithRandomAnswer:setAnswer(answerTable)
+    self.trueAnswer = answerTable[self.question].trueAnswer
+    self.listAnswer[#self.listAnswer + 1] = self.trueAnswer
+    self.listAnswer[#self.listAnswer + 1] = answerTable[self.question].falseAnswer1
+    self.listAnswer[#self.listAnswer + 1] = answerTable[self.question].falseAnswer2
+    self.listAnswer[#self.listAnswer + 1] = answerTable[self.question].falseAnswer3
+
+    self:randomIndexAnswer()
+end
+
+function QuestionWithRandomAnswer:new(o, questionTable, listQuestionHaveRandom, answerTable)
     o = o or {}
     self.__index = self
     setmetatable(o, self)
-
-    local indexOfQuestion = math.random(0, 3)
-    self.question = questionTable[indexOfQuestion]
-    self.trueAnswer = answerTable[indexOfQuestion]
-    self.listAnswer[#self.listAnswer + 1] = self.trueAnswer
-    self:genRandomAnswer(answerTable)
-    self:randomIndexAnswer()
+    self.listQuestionHaveRandom = listQuestionHaveRandom
+    self:genRandomQuestion(questionTable)
+    self:setAnswer(answerTable)
     return o
 end
 
@@ -67,16 +110,8 @@ function QuestionWithRandomAnswer:getQuestion()
     return self.question
 end
 
-function QuestionWithRandomAnswer:randomIndexAnswer()
-    local newArrAnswer = {}
-    for i, value in pairs(self.listAnswer) do
-        local randomIndex = math.random(1, 4)
-        while newArrAnswer[randomIndex] ~= nil do
-            randomIndex = math.random(1, 4)
-        end
-        newArrAnswer[randomIndex] = value
-    end
-    self.listAnswer = newArrAnswer
+function QuestionWithRandomAnswer:getTrueAnswer()
+    return self.trueAnswer
 end
 
 function QuestionWithRandomAnswer:getQuestion()
@@ -91,8 +126,21 @@ function QuestionWithRandomAnswer:getListAnswer()
     return self.listAnswer
 end
 
-local newQuestion = QuestionWithRandomAnswer:new(nil, QuestionTable, AnswerTable)
+local newQuestion
+local HAVE_CREATE_QUESTION = false
 
+function createNewQuestion()
+    if HAVE_CREATE_QUESTION == false then
+
+        loadQuestionHaveRandom()
+        newQuestion = QuestionWithRandomAnswer:new(nil, QuestionTable, listQuestionShow, AnswerTable)
+        updateQuestionHaveRandom()
+        HAVE_CREATE_QUESTION = true
+        return newQuestion
+    end
+    newQuestion: randomIndexAnswer()
+    return newQuestion
+end
 --------------------------------------- ACTIVE UI PANEL -------------------------------
 local function setActiveUIQuestion(condition)
     if condition == true then
@@ -108,17 +156,6 @@ local function setActiveCursor(condition)
     UI.SetCursorLockedToViewport(condition)
 end
 
-function OnInteracted(theTrigger, player)
-    openChest()
-    Task.Wait(0.4)
-    setActiveUIQuestion(true)
-    setActiveCursor(true)
-end
-
-local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
-TRIGGER.interactedEvent:Connect(OnInteracted)
-TRIGGER.isInteractable = true
-
 --------------------------------------- UI PANEL ------------------------------------
 QUEST_PANEL_UI = script:GetCustomProperty("QuestPanelUI"):WaitForObject()
 
@@ -133,16 +170,16 @@ local ANSWER_TEXT_BOX_4 = script:GetCustomProperty("AnswerTextBox_4"):WaitForObj
 -- function CLOSE_QUESTION_BUTTON_CLICKED()
 --     QUEST_PANEL_UI.visibility = Visibility.FORCE_OFF
 -- end
-
-QUEST_PANEL_UI.visibility = Visibility.FORCE_OFF
-QUESTION_TEXT_BOX.text = newQuestion:getQuestion()
-ANSWER_TEXT_BOX_1.text = newQuestion:getListAnswer()[1]
-ANSWER_TEXT_BOX_2.text = newQuestion:getListAnswer()[2]
-ANSWER_TEXT_BOX_3.text = newQuestion:getListAnswer()[3]
-ANSWER_TEXT_BOX_4.text = newQuestion:getListAnswer()[4]
-
+function setQuestionToUI(newQuestion)
+    QUEST_PANEL_UI.visibility = Visibility.FORCE_OFF
+    QUESTION_TEXT_BOX.text = newQuestion:getQuestion()
+    ANSWER_TEXT_BOX_1.text = newQuestion:getListAnswer()[1]
+    ANSWER_TEXT_BOX_2.text = newQuestion:getListAnswer()[2]
+    ANSWER_TEXT_BOX_3.text = newQuestion:getListAnswer()[3]
+    ANSWER_TEXT_BOX_4.text = newQuestion:getListAnswer()[4]
+end
 ------------------------------------ Chest --------------------------------------
-local CHEST= script:GetCustomProperty("Chest"):WaitForObject()
+local CHEST = script:GetCustomProperty("Chest"):WaitForObject()
 local ROTATION_ROOT = script:GetCustomProperty("RotationRoot"):WaitForObject()
 local CHEST_LOCK = script:GetCustomProperty("ChestLock"):WaitForObject()
 local TIME_TO_LOCK_CHEST = 4
@@ -153,7 +190,6 @@ local SPEED = 600
 local CHEST_OPEN = false
 
 function openChest()
-
     if CHEST_OPEN == false then
         CHEST_OPEN = true
         OpenChestLid()
@@ -161,8 +197,20 @@ function openChest()
 end
 
 function SetTargetRotation(rotation)
-	targetDoorRotation = rotation
-	ROTATION_ROOT:RotateTo(Rotation.New(90.0 * rotation, 0.0, 0.0), 90.0 * math.abs(targetDoorRotation - GetChestLidRotation()) / SPEED, true)
+    targetDoorRotation = rotation
+    ROTATION_ROOT:RotateTo(
+        Rotation.New(90.0 * rotation, 0.0, 0.0),
+        90.0 * math.abs(targetDoorRotation - GetChestLidRotation()) / SPEED,
+        true
+    )
+end
+
+function setActiveChestTrigger(condition)
+    if condition == true then
+        TRIGGER.isInteractable = true
+    else
+        TRIGGER.isInteractable = false
+    end
 end
 
 function OpenChestLid()
@@ -172,28 +220,28 @@ end
 
 function CloseChestLid()
     CHEST_OPEN = false
-	SetTargetRotation(0.0)
+    SetTargetRotation(0.0)
 end
 
 function GetChestLidRotation()
-	return ROTATION_ROOT:GetRotation().x / 90.0
+    return ROTATION_ROOT:GetRotation().x / 90.0
 end
 
 function ResetChestLid()
-    SetCurrentRotation(0.0)
-    TRIGGER.isInteractable = true
+    SetTargetRotation(0.0)
+    setActiveChestTrigger(true)
 end
 
 function OnRoundStart()
-	ResetChestLid()
+    ResetChestLid()
 end
 
 function activateChestLock()
     CHEST_LOCK.visibility = Visibility.FORCE_ON
-    TRIGGER.isInteractable = false
+    setActiveChestTrigger(false)
     Task.Wait(TIME_TO_LOCK_CHEST)
     CHEST_LOCK.visibility = Visibility.FORCE_OFF
-    TRIGGER.isInteractable = true
+    setActiveChestTrigger(true)
 end
 
 function removeChest()
@@ -201,8 +249,22 @@ function removeChest()
 end
 
 if RESET_ON_ROUND_START then
-	Game.roundStartEvent:Connect(OnRoundStart)
+    Game.roundStartEvent:Connect(OnRoundStart)
 end
+
+function OnInteracted(theTrigger, player)
+    setActiveChestTrigger(false)
+    openChest()
+    setQuestionToUI(createNewQuestion())
+    Task.Wait(0.4)
+    setActiveUIQuestion(true)
+    setActiveCursor(true)
+end
+
+TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
+TRIGGER.interactedEvent:Connect(OnInteracted)
+setActiveChestTrigger(true)
+
 ---------------------------------------------------------------------------------
 local UITEXT_COIN = script:GetCustomProperty("UITextCoin"):WaitForObject()
 
