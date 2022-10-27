@@ -1,6 +1,67 @@
 Name: "Platforms_1"
 RootId: 10281661091208155955
 Objects {
+  Id: 4997128397803797980
+  Name: "Platform"
+  Transform {
+    Location {
+      X: -1150
+      Y: -1500
+      Z: 1450
+    }
+    Rotation {
+      Yaw: -80
+    }
+    Scale {
+      X: 9.25
+      Y: 85
+      Z: 1
+    }
+  }
+  ParentId: 10281661091208155955
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6158544020275080816
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5109129970559468393
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
   Id: 51112761888959482
   Name: "Platform"
   Transform {
@@ -75,66 +136,6 @@ Objects {
       X: 42.75
       Y: 2.75
       Z: 23.7500095
-    }
-  }
-  ParentId: 10281661091208155955
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6158544020275080816
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5109129970559468393
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 13906390185827589664
-  Name: "Platform"
-  Transform {
-    Location {
-      X: -10757.1748
-      Y: 1800
-      Z: 995.979492
-    }
-    Rotation {
-    }
-    Scale {
-      X: 42.75
-      Y: 2.75
-      Z: 19
     }
   }
   ParentId: 10281661091208155955
@@ -306,67 +307,6 @@ Objects {
       X: 3.75
       Y: 9.25000095
       Z: 1
-    }
-  }
-  ParentId: 10281661091208155955
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6158544020275080816
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5109129970559468393
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 11584272618283596978
-  Name: "Platform"
-  Transform {
-    Location {
-      X: -15631.9014
-      Y: -1514.68799
-      Z: 1376.63464
-    }
-    Rotation {
-      Yaw: 19.6693707
-    }
-    Scale {
-      X: 15.4229221
-      Y: 54.3307037
-      Z: 1.40208423
     }
   }
   ParentId: 10281661091208155955
@@ -2152,7 +2092,7 @@ Objects {
   Transform {
     Location {
       X: -4950
-      Y: -319.315674
+      Y: -300
       Z: 50
     }
     Rotation {

@@ -1,4 +1,13 @@
 Assets {
+  Id: 17987089335467507005
+  Name: "Swirling Paper Ward VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_paperWard_burst"
+  }
+}
+Assets {
   Id: 17965850983566478317
   Name: "Additive Soft Edge"
   PlatformAssetType: 2
@@ -17,21 +26,21 @@ Assets {
   }
 }
 Assets {
-  Id: 17546982558755096284
-  Name: "Whitebox Floor 01 8m x 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_gen_whitebox_floor_001_8x8"
-  }
-}
-Assets {
   Id: 17384679848236598746
   Name: "Sci-fi Wall Screen 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_scf_screen_holo_001_ref"
+  }
+}
+Assets {
+  Id: 17365099617506282650
+  Name: "Treasure Ray Burst"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Treasure_Rays"
   }
 }
 Assets {
@@ -89,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15862839354445934362
+  Name: "Plasma Impact VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_plasma_impact"
+  }
+}
+Assets {
   Id: 15841155474137454616
   Name: "Text 03: N"
   PlatformAssetType: 1
@@ -122,6 +140,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_mil_barbed_wire_001_uv_ref"
+  }
+}
+Assets {
+  Id: 15083892452369486175
+  Name: "Rocket Trail VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_rocket_trail"
   }
 }
 Assets {
@@ -170,15 +197,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14265633846074829693
-  Name: "Pyramid - 4-Sided Hollow Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pyramid_4_sided_hollow_thick_001"
-  }
-}
-Assets {
   Id: 14244962582391360272
   Name: "Pyramid - 4-Sided"
   PlatformAssetType: 1
@@ -224,15 +242,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12665761949314103200
-  Name: "Cone - Truncated Hollow Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_hollow_003"
-  }
-}
-Assets {
   Id: 12116466004049496243
   Name: "Square Column Segment"
   PlatformAssetType: 1
@@ -275,6 +284,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_smoke_volume_vfx"
+  }
+}
+Assets {
+  Id: 11602059761551783195
+  Name: "Toon Radial Dust Burst VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_radialImpactBurst_toon"
   }
 }
 Assets {
@@ -431,30 +449,12 @@ Assets {
   }
 }
 Assets {
-  Id: 8169848131924464338
-  Name: "Stained Glass 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_glass_stained_manticore_001"
-  }
-}
-Assets {
   Id: 7912453524523110028
   Name: "Callout Sparkle"
   PlatformAssetType: 8
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_sparkles_volume_vfx"
-  }
-}
-Assets {
-  Id: 7753733828038124515
-  Name: "Metal Old Beaten Gold 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_002"
   }
 }
 Assets {
@@ -482,6 +482,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_006"
+  }
+}
+Assets {
+  Id: 7014522669798324829
+  Name: "Swirling Dust VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_swirling_dust"
   }
 }
 Assets {
@@ -581,6 +590,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_magic_projectile"
+  }
+}
+Assets {
+  Id: 5943371251501581487
+  Name: "Signal Flare"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Signal_Flare"
   }
 }
 Assets {
@@ -710,12 +728,30 @@ Assets {
   }
 }
 Assets {
+  Id: 3860875092438471880
+  Name: "Ground Explosion VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_mil_explosion_ground"
+  }
+}
+Assets {
   Id: 3445953403973181092
   Name: "Text 03: E"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_004"
+  }
+}
+Assets {
+  Id: 3137516374477183732
+  Name: "Gibs Explosion VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_bloody_explosion"
   }
 }
 Assets {
@@ -734,15 +770,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "Text_018"
-  }
-}
-Assets {
-  Id: 2339799599977760459
-  Name: "Pyramid - 4-Sided Truncated"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pyramid_truncated_001"
   }
 }
 Assets {
@@ -770,15 +797,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_4_sided_hollow_thin_001"
-  }
-}
-Assets {
-  Id: 1790424736158858655
-  Name: "Pyramid - 3-Sided Hollow Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pyramid_3_sided_hollw_thick_001"
   }
 }
 Assets {
@@ -824,6 +842,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_pile_str_02_ref"
+  }
+}
+Assets {
+  Id: 716644362226427936
+  Name: "Lightning VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_lightning"
+  }
+}
+Assets {
+  Id: 161941836213610146
+  Name: "Level Up VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Level_Up"
   }
 }
 Assets {
