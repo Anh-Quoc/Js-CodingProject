@@ -1,0 +1,87 @@
+MetaVersion: 1
+MarketplaceDetails {
+  Id: "4eb2a5595d384549a40f0adf72dd82ba"
+  OwnerAccountId: "c420db4df1504decb2e6b19102c8a1e0"
+  OwnerName: "meow_pizza"
+  Version: "1.0.0"
+}
+AssetIdsOriginalToNew {
+  key: 162151367198570398
+  value: 15627125509275869468
+}
+AssetIdsOriginalToNew {
+  key: 1116760160694603255
+  value: 10498991717072963383
+}
+AssetIdsOriginalToNew {
+  key: 1883778736238546551
+  value: 12680225610869740106
+}
+AssetIdsOriginalToNew {
+  key: 2003752736780784297
+  value: 6806995618211479282
+}
+AssetIdsOriginalToNew {
+  key: 2038077216541919415
+  value: 12007371345338809850
+}
+AssetIdsOriginalToNew {
+  key: 3090477863714944504
+  value: 2398774385168314019
+}
+AssetIdsOriginalToNew {
+  key: 5927220524009298293
+  value: 15448154637231143731
+}
+AssetIdsOriginalToNew {
+  key: 7577485333701035703
+  value: 6950814150068474635
+}
+AssetIdsOriginalToNew {
+  key: 7923852305526490811
+  value: 5341673959795089003
+}
+AssetIdsOriginalToNew {
+  key: 9770511928359673738
+  value: 520156806833590311
+}
+AssetIdsOriginalToNew {
+  key: 11474304183764602805
+  value: 788813367560540111
+}
+AssetIdsOriginalToNew {
+  key: 11834432829939941397
+  value: 2682248390545194889
+}
+AssetIdsOriginalToNew {
+  key: 12730075539935520670
+  value: 12621795920832204856
+}
+AssetIdsOriginalToNew {
+  key: 13645484765276120961
+  value: 10930800847216945499
+}
+AssetIdsOriginalToNew {
+  key: 14084924065427283392
+  value: 7908024791752408118
+}
+AssetIdsOriginalToNew {
+  key: 14373757464648078715
+  value: 4453077774721509318
+}
+AssetIdsOriginalToNew {
+  key: 14771115251474535574
+  value: 7404818002465189134
+}
+AssetIdsOriginalToNew {
+  key: 15636749404113921442
+  value: 11663189489037882929
+}
+AssetIdsOriginalToNew {
+  key: 17367449922255341506
+  value: 10593919642969174904
+}
+AssetIdsOriginalToNew {
+  key: 17876034834621974685
+  value: 12601109436588445390
+}

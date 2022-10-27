@@ -116,15 +116,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15320377336413554857
-  Name: "Additive Edgeline Top Fade"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_add_edgeline_sharpline_topfade"
-  }
-}
-Assets {
   Id: 15311694679467806527
   Name: "Barbed Wire 01"
   PlatformAssetType: 2
@@ -446,6 +437,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_glass_stained_manticore_001"
+  }
+}
+Assets {
+  Id: 7912453524523110028
+  Name: "Callout Sparkle"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_sparkles_volume_vfx"
   }
 }
 Assets {
@@ -779,15 +779,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_3_sided_hollw_thick_001"
-  }
-}
-Assets {
-  Id: 1736396847558857326
-  Name: "Animated Glowing Hex"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_hex_animated"
   }
 }
 Assets {
