@@ -143,8 +143,8 @@ Objects {
   Name: "Player Start"
   Transform {
     Location {
-      X: 291.316071
-      Y: -635.738037
+      X: 1295.91296
+      Y: 1195.6189
     }
     Rotation {
       Yaw: 179.999954
