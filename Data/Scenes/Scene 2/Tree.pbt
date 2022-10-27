@@ -25,6 +25,7 @@ Objects {
   ChildIds: 9371167362585070395
   ChildIds: 17317624130108919115
   ChildIds: 10106329912614482386
+  ChildIds: 3273216552277478182
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +38,83 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 3273216552277478182
+  Name: "Escalator_Modular"
+  Transform {
+    Location {
+      X: -9150
+      Y: 5450
+      Z: 7300
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 14583633273588325503
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 3273216552277478182
+    SubobjectId: 4143921762434023660
+    InstanceId: 11351758035814901759
+    TemplateId: 17154732534837062511
+    WasRoot: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 14583633273588325503
+  Name: "Escalator_Modular_Sections"
+  Transform {
+    Location {
+      X: -321.814026
+      Y: 49.426239
+      Z: 183.33313
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3273216552277478182
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Escalator_Modular_Sections"
+  }
+  InstanceHistory {
+    SelfId: 14583633273588325503
+    SubobjectId: 16036648457804781493
+    InstanceId: 11351758035814901759
+    TemplateId: 17154732534837062511
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"

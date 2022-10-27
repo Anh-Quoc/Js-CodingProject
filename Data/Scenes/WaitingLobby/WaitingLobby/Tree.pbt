@@ -286,6 +286,7 @@ Objects {
   Name: "Floor"
   Transform {
     Location {
+      X: 2000
     }
     Rotation {
     }
@@ -476,7 +477,7 @@ Objects {
   Name: "3"
   Transform {
     Location {
-      X: -3679.35352
+      X: -1679.35352
       Y: 3666.31323
       Z: 9.22558594
     }
@@ -577,7 +578,7 @@ Objects {
   Name: "3"
   Transform {
     Location {
-      X: 3739.32422
+      X: 5739.32422
       Y: 3459.54785
       Z: 9.22558594
     }
@@ -680,7 +681,7 @@ Objects {
   Name: "3"
   Transform {
     Location {
-      X: 3676.89355
+      X: 5676.89355
       Y: -3814.26929
       Z: 9.22558594
     }
@@ -764,11 +765,11 @@ Objects {
   Name: "3"
   Transform {
     Location {
-      X: -3736.86401
+      X: -1736.86401
       Y: -3311.5918
     }
     Rotation {
-      Yaw: -64.8842087
+      Yaw: -64.8842163
     }
     Scale {
       X: 4.59532309

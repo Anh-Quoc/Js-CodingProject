@@ -72,6 +72,8 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
+      X: -1999.95117
+      Y: 0.00143047678
       Z: 50
     }
     Rotation {
@@ -125,6 +127,8 @@ Objects {
   Name: "Cube - bottom aligned"
   Transform {
     Location {
+      X: -1999.95117
+      Y: 0.00143047678
     }
     Rotation {
     }
