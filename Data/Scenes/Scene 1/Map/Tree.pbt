@@ -1,16 +1,16 @@
 Name: "Map"
 RootId: 15290591361194638147
 Objects {
-  Id: 17472974153188344322
+  Id: 4969847553309664154
   Name: "Checkpoint Flag"
   Transform {
     Location {
       X: 9050
-      Y: 2650
+      Y: -350
       Z: 1950
     }
     Rotation {
-      Yaw: -89.9999619
+      Yaw: -89.9999542
     }
     Scale {
       X: 1
@@ -19,63 +19,25 @@ Objects {
     }
   }
   ParentId: 15290591361194638147
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3405717314255278325
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 6158544020275080816
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -418.007629
-            Y: 261.890808
-            Z: 140.956436
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 16620516859478907632
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Checkpoint Flag"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 9050
-            Y: -350
-            Z: 1950
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -89.9999542
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 17181500319873305240
-    }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Checkpoint Flag"
+  }
+  InstanceHistory {
+    SelfId: 4969847553309664154
+    SubobjectId: 16620516859478907632
+    InstanceId: 17472974153188344322
+    TemplateId: 17181500319873305240
+    WasRoot: true
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -164,138 +126,6 @@ Objects {
     }
     Vfx {
       AutoPlay: true
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 3875232332683414760
-  Name: "Portal To A Location"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15290591361194638147
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11788075628528633600
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -18000
-            Y: -2900
-            Z: -1350
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 6158544020275080816
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12614167284714683440
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Portal To A Location"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 800
-            Y: 300
-            Z: 1400
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4420317696723813821
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 10588114417224341809
-  Name: "Platform"
-  Transform {
-    Location {
-      X: 9500
-      Z: 1850
-    }
-    Rotation {
-    }
-    Scale {
-      X: 8.75000095
-      Y: 15.5
-      Z: 1
-    }
-  }
-  ParentId: 15290591361194638147
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6158544020275080816
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5109129970559468393
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
     }
   }
   Relevance {

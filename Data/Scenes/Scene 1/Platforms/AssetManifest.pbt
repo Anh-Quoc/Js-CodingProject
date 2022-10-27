@@ -1,13 +1,4 @@
 Assets {
-  Id: 11145905612774916316
-  Name: "Glitchy Hologram"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_hologram"
-  }
-}
-Assets {
   Id: 7763050684954085973
   Name: "Cylinder - Rounded Small"
   PlatformAssetType: 1
