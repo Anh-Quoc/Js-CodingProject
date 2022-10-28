@@ -1,7 +1,7 @@
 
 local listPlayer = {}
 local team1Condition = true
-local MAX_PLAYER = 6
+local MAX_PLAYER = 1
 local function transferPlayerToScene()
     Task.Wait(3)
     for _, p in pairs(listPlayer) do

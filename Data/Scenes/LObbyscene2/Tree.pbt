@@ -23,6 +23,7 @@ Objects {
   ChildIds: 3678384773666439023
   ChildIds: 14396334534136250052
   ChildIds: 16204383798382078563
+  ChildIds: 6096400020839245525
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -40,6 +41,54 @@ Objects {
     Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 6096400020839245525
+  Name: "Plot Scene 1-v2"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 721325120436835348
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Plot Scene 1-v2"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13572182480291880013
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1574.60681
+            Y: 1889.6062
+            Z: 841.82605
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16066326086752572810
+      value {
+        Overrides {
+          Name: "CanvasControl.Opacity"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10468068394774371540
+    }
+  }
 }
 Objects {
   Id: 16204383798382078563
