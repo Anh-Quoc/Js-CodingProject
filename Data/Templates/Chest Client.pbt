@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 16299371412515350759
         ChildIds: 4843279013548209659
         UnregisteredParameters {
         }
@@ -191,13 +191,7 @@ Assets {
           Overrides {
             Name: "cs:QuestionDatabase"
             AssetReference {
-              Id: 18138289351027980804
-            }
-          }
-          Overrides {
-            Name: "cs:ListRandomQuest"
-            AssetReference {
-              Id: 18337571046162097081
+              Id: 4403840721734172590
             }
           }
           Overrides {
@@ -275,12 +269,7 @@ Assets {
           Overrides {
             Name: "cs:UITextCoin"
             ObjectReference {
-              SelfId: 4376003964777109452
-              SubObjectId: 2729611865382761084
-              InstanceId: 2986026417591449453
-              TemplateId: 3671377012180307125
-              NestedInstanceIds: 7176867007917408385
-              OuterTemplateIds: 10035398994750791372
+              SelfId: 12742878026303011394
             }
           }
           Overrides {
@@ -299,6 +288,12 @@ Assets {
             Name: "cs:Chest"
             ObjectReference {
               SubObjectId: 4843279013548209659
+            }
+          }
+          Overrides {
+            Name: "cs:UIListQuestion"
+            ObjectReference {
+              SelfId: 17152986860381977484
             }
           }
         }
