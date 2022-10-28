@@ -203,7 +203,7 @@ Objects {
     Overrides {
       Name: "cs:KillTrigger"
       ObjectReference {
-        SelfId: 10043951901031468820
+        SelfId: 841534158063459245
       }
     }
   }

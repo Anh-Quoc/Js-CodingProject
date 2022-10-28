@@ -1,10 +1,10 @@
 Assets {
-  Id: 18148069755636888949
-  Name: "Pirata One"
-  PlatformAssetType: 28
+  Id: 17987089335467507005
+  Name: "Swirling Paper Ward VFX"
+  PlatformAssetType: 8
   PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "PirataOneRegular_ref"
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_paperWard_burst"
   }
 }
 Assets {
@@ -26,21 +26,21 @@ Assets {
   }
 }
 Assets {
+  Id: 17384679848236598746
+  Name: "Sci-fi Wall Screen 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_scf_screen_holo_001_ref"
+  }
+}
+Assets {
   Id: 17365099617506282650
   Name: "Treasure Ray Burst"
   PlatformAssetType: 8
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_Treasure_Rays"
-  }
-}
-Assets {
-  Id: 17265577904957117337
-  Name: "Resurrection VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_resurrection"
   }
 }
 Assets {
@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15862839354445934362
+  Name: "Plasma Impact VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_plasma_impact"
+  }
+}
+Assets {
   Id: 15841155474137454616
   Name: "Text 03: N"
   PlatformAssetType: 1
@@ -131,6 +140,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_mil_barbed_wire_001_uv_ref"
+  }
+}
+Assets {
+  Id: 15083892452369486175
+  Name: "Rocket Trail VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_rocket_trail"
   }
 }
 Assets {
@@ -284,6 +302,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_smoke_volume_vfx"
+  }
+}
+Assets {
+  Id: 11602059761551783195
+  Name: "Toon Radial Dust Burst VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_radialImpactBurst_toon"
   }
 }
 Assets {
@@ -476,6 +503,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7014522669798324829
+  Name: "Swirling Dust VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_swirling_dust"
+  }
+}
+Assets {
   Id: 6861786771159946942
   Name: "Gear - generic large five-spoked"
   PlatformAssetType: 1
@@ -581,6 +617,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_magic_projectile"
+  }
+}
+Assets {
+  Id: 5943371251501581487
+  Name: "Signal Flare"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Signal_Flare"
   }
 }
 Assets {
@@ -710,6 +755,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3860875092438471880
+  Name: "Ground Explosion VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_mil_explosion_ground"
+  }
+}
+Assets {
   Id: 3445953403973181092
   Name: "Text 03: E"
   PlatformAssetType: 1
@@ -719,12 +773,12 @@ Assets {
   }
 }
 Assets {
-  Id: 3195866115574100278
-  Name: "Ceramic Tiles Square 01"
-  PlatformAssetType: 2
+  Id: 3137516374477183732
+  Name: "Gibs Explosion VFX"
+  PlatformAssetType: 8
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_ceramic_tile_square_001"
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_bloody_explosion"
   }
 }
 Assets {
@@ -815,6 +869,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_pile_str_02_ref"
+  }
+}
+Assets {
+  Id: 716644362226427936
+  Name: "Lightning VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_lightning"
+  }
+}
+Assets {
+  Id: 161941836213610146
+  Name: "Level Up VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Level_Up"
   }
 }
 Assets {
