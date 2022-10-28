@@ -1,6 +1,45 @@
 Name: "Map_1"
 RootId: 15378138520008998405
 Objects {
+  Id: 13969288516165557050
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: -8250
+      Y: 400
+      Z: 250
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15378138520008998405
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 2
+    PlayerScaleMultiplier: 1
+    SpawnEffectsTemplate {
+    }
+    ShouldDecrowdPlayers: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
   Id: 10761887900518783048
   Name: "Flame SFX"
   Transform {
@@ -124,9 +163,8 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
-    SpawnKey: "Map1"
     SpawnEffectsTemplate {
     }
     ShouldDecrowdPlayers: true
@@ -166,7 +204,6 @@ Objects {
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
-    SpawnKey: "Map1"
     SpawnEffectsTemplate {
     }
     ShouldDecrowdPlayers: true
@@ -206,6 +243,12 @@ Objects {
           Name: "ma:Shared_BaseMaterial:id"
           AssetReference {
             Id: 6158544020275080816
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
           }
         }
       }
@@ -363,99 +406,6 @@ Objects {
   }
   Relevance {
     Value: "mc:eproxyrelevance:critical"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 8859000298378242703
-  Name: "Checkpoint Flag"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15378138520008998405
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3405717314255278325
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 9307878989957766555
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 7709317994785845856
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 3195866115574100278
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -524.059265
-            Y: 267.990173
-            Z: 266.947327
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 90
-            Yaw: 90
-            Roll: 4.20838165
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 16620516859478907632
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Checkpoint Flag"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2500
-            Y: -400
-            Z: 1950
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -89.9999695
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 17181500319873305240
-    }
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -1522,7 +1472,6 @@ Objects {
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
-    SpawnKey: "Map1"
     SpawnEffectsTemplate {
     }
     ShouldDecrowdPlayers: true

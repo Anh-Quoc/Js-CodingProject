@@ -108,6 +108,7 @@ Objects {
   }
   ParentId: 1611092256492287211
   ChildIds: 3775587411709263795
+  ChildIds: 10043951901031468820
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -134,6 +135,55 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
+  Id: 10043951901031468820
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 3726.17578
+      Y: -4778.64844
+    }
+    Rotation {
+    }
+    Scale {
+      X: 182.111069
+      Y: 188.389191
+      Z: 0.641515076
+    }
+  }
+  ParentId: 7574928819103179371
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+    InteractionTemplate {
+      Id: 841534158063459245
+    }
+    BreadcrumbTemplate {
+      Id: 841534158063459245
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
   Id: 3775587411709263795
   Name: "KillZoneServer"
   Transform {
@@ -153,7 +203,7 @@ Objects {
     Overrides {
       Name: "cs:KillTrigger"
       ObjectReference {
-        SelfId: 841534158063459245
+        SelfId: 10043951901031468820
       }
     }
   }

@@ -128,11 +128,9 @@ Objects {
     RespawnSettings {
       RespawnDelay: 1
       RespawnMode_v2 {
-        Value: "mc:erespawnmode:farthestfromotherplayers"
+        Value: "mc:erespawnmode:atclosestspawnpoint"
       }
       StartSpawned: true
-      SpawnKey: "Map1"
-      RespawnKey: "Map1"
     }
   }
   NetworkRelevanceDistance {
