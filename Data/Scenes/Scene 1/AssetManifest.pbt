@@ -179,6 +179,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14388349938129413296
+  Name: "Magic Circle Generator Advanced: All VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_magic_circle_generator_all"
+  }
+}
+Assets {
   Id: 14363444765152156567
   Name: "Watersplash Large VFX"
   PlatformAssetType: 8
@@ -212,6 +221,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_scatter_01_ref"
+  }
+}
+Assets {
+  Id: 13111576716182267756
+  Name: "Magic Shield Buff Powerup Spell 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_magic_shield_buff_powerup_spell_01_Cue_ref"
   }
 }
 Assets {
@@ -305,15 +323,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11145905612774916316
-  Name: "Glitchy Hologram"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_hologram"
-  }
-}
-Assets {
   Id: 10534201254598460876
   Name: "Torch Fire VFX"
   PlatformAssetType: 8
@@ -392,6 +401,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "Text_017"
+  }
+}
+Assets {
+  Id: 9307878989957766555
+  Name: "Digital Clock"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_digital_clock"
   }
 }
 Assets {
@@ -518,6 +536,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_hand_01_ref"
+  }
+}
+Assets {
+  Id: 6412508969258821711
+  Name: "Glow Shape Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_glow"
   }
 }
 Assets {
