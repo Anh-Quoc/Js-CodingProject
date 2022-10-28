@@ -197,6 +197,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2660440580361507621
+  Name: "Fantasy Coins 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Coins_005"
+  }
+}
+Assets {
   Id: 2359909077053540231
   Name: "Tree Oak Stump 01"
   PlatformAssetType: 1

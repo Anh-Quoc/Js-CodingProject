@@ -64,6 +64,12 @@ Objects {
           Name: "Name"
           String: "WeaponBuyMenu"
         }
+        Overrides {
+          Name: "cs:CurrencyIcon"
+          AssetReference {
+            Id: 2660440580361507621
+          }
+        }
       }
     }
     TemplateAsset {
@@ -171,8 +177,8 @@ Objects {
           Name: "Position"
           Vector {
             X: -1328.18774
-            Y: -20671.5742
-            Z: 1131.27466
+            Y: -20422.7227
+            Z: 1245.3009
           }
         }
         Overrides {
@@ -200,6 +206,21 @@ Objects {
   }
   ParentId: 4781671109827199097
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 558726503135891821
+      value {
+        Overrides {
+          Name: "RespawnSettings.RespawnMode"
+          Enum {
+            Value: "mc:erespawnmode:farthestfromenemy"
+          }
+        }
+        Overrides {
+          Name: "RespawnSettings.RespawnDelay"
+          Float: 10
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 4154824205297641589
       value {

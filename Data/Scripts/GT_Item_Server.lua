@@ -179,8 +179,13 @@ end
 function OnPlayerJoined(player)
     -- Set player data coint
     local playerData = Storage.GetPlayerData(player)
-    STARTER_CURRENCY_AMOUNT = playerData.coin or 2000
-
+    print(player.name .. " have " .. tostring(playerData.coin))
+    if playerData.coin == nil or playerData.coin == 0 then
+        STARTER_CURRENCY_AMOUNT = 3000
+    else 
+        STARTER_CURRENCY_AMOUNT = playerData.coin
+    end
+    
     if SHOULD_GIVE_STARTER_CURRENCY then
         player:SetResource(CURRENCY_RESOURCE_NAME, STARTER_CURRENCY_AMOUNT)
     end
@@ -191,10 +196,7 @@ function OnPlayerJoined(player)
     if SHOULD_GIVE_STARTER_WEAPON then
         local starterWeapon = World.SpawnAsset(STARTER_WEAPON_TEMPLATE)
         starterWeapon:Equip(player)
-    end
-    -- local playerData = Storage.GetPlayerData(player)
-    -- STARTER_CURRENCY_AMOUNT = playerData["coint"]
-    
+    end 
 end
 
 function OnPlayerLeft(player)

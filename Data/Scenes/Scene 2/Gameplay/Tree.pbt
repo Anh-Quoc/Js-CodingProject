@@ -430,7 +430,7 @@ Objects {
     }
   }
   ParentId: 3225228781268822404
-  ChildIds: 828667529942994297
+  ChildIds: 6595409853592295929
   UnregisteredParameters {
     Overrides {
       Name: "cs:CaptureState"
@@ -481,7 +481,7 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 828667529942994297
+  Id: 6595409853592295929
   Name: "ClientContext"
   Transform {
     Location {
@@ -495,18 +495,19 @@ Objects {
     }
   }
   ParentId: 12848522851621090905
-  ChildIds: 11074350357426276117
   ChildIds: 4697164257775239235
-  UnregisteredParameters {
-  }
+  ChildIds: 11074350357426276117
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
     MinDetailLevel {
@@ -514,48 +515,6 @@ Objects {
     }
     MaxDetailLevel {
       Value: "mc:edetaillevel:ultra"
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 4697164257775239235
-  Name: "AnimatedCapPoint_Colorize"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 828667529942994297
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Root"
-      ObjectReference {
-        SelfId: 12848522851621090905
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 17571598809703102873
     }
   }
   NetworkRelevanceDistance {
@@ -577,7 +536,7 @@ Objects {
       Z: 0.732716084
     }
   }
-  ParentId: 828667529942994297
+  ParentId: 6595409853592295929
   ChildIds: 5128957169334354392
   UnregisteredParameters {
   }
@@ -641,6 +600,48 @@ Objects {
   Script {
     ScriptAsset {
       Id: 5408845961383440045
+    }
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 4697164257775239235
+  Name: "AnimatedCapPoint_Colorize"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6595409853592295929
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Root"
+      ObjectReference {
+        SelfId: 12848522851621090905
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17571598809703102873
     }
   }
   NetworkRelevanceDistance {
@@ -1795,7 +1796,7 @@ Objects {
   Settings {
     IsDefault: true
     RespawnSettings {
-      RespawnDelay: 5
+      RespawnDelay: 10
       RespawnMode_v2 {
         Value: "mc:erespawnmode:farthestfromenemy"
       }

@@ -708,14 +708,14 @@ Objects {
   Transform {
     Location {
       X: -57.8208
-      Y: -50
+      Y: 309.109863
       Z: -50
     }
     Rotation {
     }
     Scale {
       X: 3.75
-      Y: 15
+      Y: 22.1822033
       Z: 1
     }
   }

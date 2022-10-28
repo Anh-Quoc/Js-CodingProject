@@ -584,6 +584,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10158861194347694849
+  Name: "Oswald"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "OswaldRegular_ref"
+  }
+}
+Assets {
   Id: 10128884331981734128
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
@@ -917,6 +926,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4511834189077857922
+  Name: "Metal Iron 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_001"
+  }
+}
+Assets {
   Id: 4437160827424791669
   Name: "Large Wood Beam 8m"
   PlatformAssetType: 1
@@ -977,6 +995,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_003"
+  }
+}
+Assets {
+  Id: 2905751522032673006
+  Name: "Cube - Chamfered Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_chamfer"
   }
 }
 Assets {
@@ -1193,6 +1220,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_broken_01"
+  }
+}
+Assets {
+  Id: 694081662799563333
+  Name: "Roboto Black"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "RobotoBlack_ref"
   }
 }
 Assets {

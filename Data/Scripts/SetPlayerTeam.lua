@@ -15,23 +15,23 @@ function OnPlayerJoind(player)
     Storage.SetPlayerData(player, playerData)
 end
 
+Game.playerJoinedEvent:Connect(OnPlayerJoind)
 
-local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
-local UIPANEL = script:GetCustomProperty("UIPanel"):WaitForObject() 
-
-function OnInteracted (trigger, other)
-	if other:IsA("Player") then
-		print(trigger.name .. ": Begin Trigger Overlap with " .. other.name)
-		UIPANEL.visibility = Visibility.FORCE_ON
-        transferAllTeam()
-	end
+function Tick()
+    for i = 1, #listPlayer do
+        local player = listPlayer[i]
+        local playerData = Storage.GetPlayerData(player)
+        playerData.coin = tonumber(player:GetResource("coin"))
+        Storage.SetPlayerData(player, playerData)
+    end
+    Task.Wait(1)
 end
 
-function transferAllPlayer()
-    for _, p in pairs(listPlayer) do
-        p:TransferToScene("Scene 2")
+function OnRoundEnd()
+    Task.Wait(2)
+    for i = 1, #listPlayer do
+        listPlayer[i]:TransferToScene("Scene 2")
     end
 end
 
-TRIGGER.interactedEvent:Connect(OnInteracted)   
-Game.playerJoinedEvent:Connect(OnPlayerJoind)
+Events.Connect("RoundEnd", OnRoundEnd)

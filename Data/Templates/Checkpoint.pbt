@@ -314,21 +314,21 @@ Assets {
       }
     }
     Assets {
-      Id: 3195866115574100278
-      Name: "Ceramic Tiles Square 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_ceramic_tile_square_001"
-      }
-    }
-    Assets {
       Id: 9307878989957766555
       Name: "Digital Clock"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "fxmi_digital_clock"
+      }
+    }
+    Assets {
+      Id: 3195866115574100278
+      Name: "Ceramic Tiles Square 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_ceramic_tile_square_001"
       }
     }
     PrimaryAssetId {

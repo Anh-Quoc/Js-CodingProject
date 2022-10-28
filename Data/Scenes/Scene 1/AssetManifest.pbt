@@ -1,13 +1,4 @@
 Assets {
-  Id: 18148069755636888949
-  Name: "Pirata One"
-  PlatformAssetType: 28
-  PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "PirataOneRegular_ref"
-  }
-}
-Assets {
   Id: 17965850983566478317
   Name: "Additive Soft Edge"
   PlatformAssetType: 2
@@ -545,6 +536,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_snow_patch_001"
+  }
+}
+Assets {
+  Id: 6180997577949446116
+  Name: "Fog Cloud"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_fog_material"
   }
 }
 Assets {

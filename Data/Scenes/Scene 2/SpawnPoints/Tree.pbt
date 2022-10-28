@@ -1,86 +1,13 @@
 Name: "SpawnPoints"
 RootId: 12510832673815440207
 Objects {
-  Id: 3869920306863120447
-  Name: "SetPlayerTeam"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12510832673815440207
-  ChildIds: 15351276855701373185
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  NetworkContext {
-    Type: Server
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
-  Id: 15351276855701373185
-  Name: "SetPlayerTeam"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3869920306863120447
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 7708934560660229192
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-  IsReplicationEnabledByDefault: true
-}
-Objects {
   Id: 6733169259344512817
   Name: "Spawn PointTeam 2 B"
   Transform {
     Location {
-      X: -10758.0088
-      Y: 2764.91333
-      Z: 9828.71094
+      X: -11032.3984
+      Y: 2146.69385
+      Z: 9847.81055
     }
     Rotation {
     }
@@ -118,9 +45,9 @@ Objects {
   Name: "Spawn Point Team 2 A"
   Transform {
     Location {
-      X: -10758.0088
-      Y: 2494.8313
-      Z: 9828.71094
+      X: -10689.3867
+      Y: 2714.91333
+      Z: 9850.29785
     }
     Rotation {
     }
@@ -158,9 +85,9 @@ Objects {
   Name: "Spawn Point Team 1 B"
   Transform {
     Location {
-      X: -560.838562
-      Y: -22321.5273
-      Z: 1326.75916
+      X: -746.5224
+      Y: -22260.2988
+      Z: 1349.7832
     }
     Rotation {
     }
@@ -198,9 +125,9 @@ Objects {
   Name: "Spawn Point Team 1 A"
   Transform {
     Location {
-      X: -832.526855
+      X: -1430.12305
       Y: -22321.5273
-      Z: 1414.35657
+      Z: 1329.74072
     }
     Rotation {
     }

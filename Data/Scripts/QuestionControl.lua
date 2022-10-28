@@ -1,5 +1,4 @@
-local TIME_FREZZ_CHEST = 1000
-local COIN_FOR_CORRECT_ANSWER = 10
+local COIN_FOR_CORRECT_ANSWER = 500
 
 local QUESTION_DATABASE = require(script:GetCustomProperty("QuestionDatabase"))
 
@@ -10,9 +9,6 @@ local RowOfDatabase = 0
 local function loadQuestionFromDatabase()
     for key, value in ipairs(QUESTION_DATABASE) do
         if value.Question ~= "" then
-        --     print(key, value.Question .. " - " .. value.trueAnswer)
-        -- if value.Question ~= "" then
-        -- end
             QuestionTable[RowOfDatabase] = value.Question
             AnswerTable[value.Question] = {}
             AnswerTable[value.Question].trueAnswer = value.trueAnswer
@@ -26,7 +22,6 @@ local function loadQuestionFromDatabase()
 end
 
 loadQuestionFromDatabase()
-
 ----------------------------- QUESTION HAVE RANDOM -----------------------------
 local listQuestionShow = {}
 local UILIST_QUESTION = script:GetCustomProperty("UIListQuestion"):WaitForObject()

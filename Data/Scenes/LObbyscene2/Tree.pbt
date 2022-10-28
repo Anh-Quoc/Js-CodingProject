@@ -19,11 +19,12 @@ Objects {
   ChildIds: 16581859176703325830
   ChildIds: 10005074784157121906
   ChildIds: 17916371867009590554
-  ChildIds: 17417930210593093026
+  ChildIds: 6110084456217890859
   ChildIds: 3678384773666439023
   ChildIds: 14396334534136250052
   ChildIds: 16204383798382078563
   ChildIds: 6096400020839245525
+  ChildIds: 15778858218750566082
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,6 +40,206 @@ Objects {
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 15778858218750566082
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 6081164915451063731
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+      ContentType {
+        Value: "mc:ecanvascontenttype:dynamic"
+      }
+      Opacity: 1
+      IsHUD: true
+      CanvasWorldSize {
+        X: 1024
+        Y: 1024
+      }
+      RedrawTime: 30
+      UseSafeZoneAdjustment: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 6081164915451063731
+  Name: "UI Panel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15778858218750566082
+  ChildIds: 15435153957335222451
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      Opacity: 1
+      OpacityMaskBrush {
+        Id: 841534158063459245
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 15435153957335222451
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6081164915451063731
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 200
+    Height: 145
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    Text {
+      Label: "C\341\272\247n c\303\263 6 ng\306\260\341\273\235i ch\306\241i \304\221\341\273\203 b\341\272\257t \304\221\341\272\247u"
+      Color {
+        R: 0.13
+        G: 1
+        B: 0.654304624
+        A: 1
+      }
+      Size: 60
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 10158861194347694849
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:top"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
   }
   IsReplicationEnabledByDefault: true
 }
@@ -262,9 +463,19 @@ Objects {
   IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 17417930210593093026
+  Id: 6110084456217890859
   Name: "Signpost"
   Transform {
+    Location {
+      X: -485.604065
+      Y: 3617.82886
+      Z: 781.36615
+    }
+    Rotation {
+      Pitch: -0.907501221
+      Yaw: -41.0915222
+      Roll: -1.13671875
+    }
     Scale {
       X: 1
       Y: 1
@@ -272,47 +483,592 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 11022529167230630959
+  ChildIds: 18071522524365644968
+  ChildIds: 6685581797773555842
+  ChildIds: 16203476221072396910
+  ChildIds: 3454245962212027529
+  ChildIds: 15210442661747396718
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 6110084456217890859
+    SubobjectId: 6357205611158453013
+    InstanceId: 17417930210593093026
+    TemplateId: 8203255583191688814
+    WasRoot: true
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 15210442661747396718
+  Name: "Line 1"
+  Transform {
+    Location {
+      X: 2715.98096
+      Y: -25.6436157
+      Z: 449.769928
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 2
+      Y: 1.37763906
+      Z: 2.60111332
+    }
+  }
+  ParentId: 6110084456217890859
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Text {
+    Text: "In 2022, the world is developing more and more with the outstanding progress of technology, but together with\r\nit is also the domination and oppression of the JS corporation. They created a dream machine,\r\nwhen the publishing machine became famous and many people joined because of the full benefits\r\nthe promise of their ambition can be fulfilled while living in that world.But no\r\nWho would have thought that this is a conspiracy from JS executives. This machine is\r\ncreated so that they could carry out a dark conspiracy that made the participants\r\nunable to escape from the dream world. Realize the dangerous conspiracy behind the thing\r\ncalled the dream life, a group of young teenagers full of enthusiasm, intelligence has\r\nregrouped under the name OJT. They have a mission to rescue people who are trapped, help them\r\nable to break out of the manipulation and return to the real world. But the story is not\r\nIt\'s easy when the \"throne\" is always strictly guarded by an elite team of soldiers."
+    FontAsset {
+      Id: 694081662799563333
+    }
+    Color {
+      R: 1
+      G: 0.998380959
+      B: 0.898
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
+  }
+  InstanceHistory {
+    SelfId: 15210442661747396718
+    SubobjectId: 16133139207120911184
+    InstanceId: 17417930210593093026
+    TemplateId: 8203255583191688814
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 3454245962212027529
+  Name: "Chamfered Cube"
+  Transform {
+    Location {
+      X: 2687.50024
+      Z: 450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 18.25
+      Y: 0.5
+      Z: 9.99999905
+    }
+  }
+  ParentId: 6110084456217890859
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 4511834189077857922
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2905751522032673006
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 3454245962212027529
+    SubobjectId: 2530398211517007799
+    InstanceId: 17417930210593093026
+    TemplateId: 8203255583191688814
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 16203476221072396910
+  Name: "Magic Circle Spherical Example"
+  Transform {
+    Location {
+      X: 3300
+      Y: 3500
+      Z: 50
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6110084456217890859
   TemplateInstance {
     ParameterOverrideMap {
-      key: 2530398211517007799
+      key: 268971497235808816
       value {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2687.50024
-            Z: 450
           }
         }
       }
     }
     ParameterOverrideMap {
-      key: 6357205611158453013
+      key: 6753467028972226770
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13750386742200337211
       value {
         Overrides {
           Name: "Name"
-          String: "Signpost"
+          String: "Magic Circle Spherical Example"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -485.604065
-            Y: 3617.82886
-            Z: 781.36615
+            X: 1350
+            Z: 20.685791
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.907501221
-            Yaw: -41.0915222
-            Roll: -1.13671875
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15454017626699140379
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.1694088
+            Y: 1.1694088
+            Z: 1.1694088
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17503125087118565529
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17796330121914480204
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.1694088
+            Y: 1.1694088
+            Z: 1.1694088
           }
         }
       }
     }
     TemplateAsset {
-      Id: 8203255583191688814
+      Id: 16963507881350072343
     }
+  }
+  InstanceHistory {
+    SelfId: 16203476221072396910
+    SubobjectId: 1253870948364347340
+    InstanceId: 17417930210593093026
+    TemplateId: 8203255583191688814
+  }
+}
+Objects {
+  Id: 6685581797773555842
+  Name: "Magic Circle Spherical Example"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6110084456217890859
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13750386742200337211
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Magic Circle Spherical Example"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3950
+            Z: 20.6858215
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.00000012
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16963507881350072343
+    }
+  }
+  InstanceHistory {
+    SelfId: 6685581797773555842
+    SubobjectId: 12501744106586639648
+    InstanceId: 17417930210593093026
+    TemplateId: 8203255583191688814
+  }
+}
+Objects {
+  Id: 18071522524365644968
+  Name: "Ice Elemental"
+  Transform {
+    Location {
+      X: 3200
+      Y: 3500
+      Z: 50
+    }
+    Rotation {
+      Yaw: 105.000053
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6110084456217890859
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4581123000829918729
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Ice Elemental"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1350
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 169.999969
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4835138295553044778
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -27.8076782
+            Y: -16.5041504
+            Z: 164.524109
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -14.5707092
+            Yaw: -52.4815979
+            Roll: -84.8492126
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10651173957833415648
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19.3708496
+            Y: 19.609314
+            Z: 120.157455
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -22.758606
+            Yaw: -117.579544
+            Roll: -179.943176
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11770059434527229294
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 45.9030762
+            Y: 16.7484131
+            Z: 112.008881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 65.039856
+            Yaw: -44.5310669
+            Roll: 66.723175
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18071133752491791119
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19.3708496
+            Y: 19.609314
+            Z: 51.7688751
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -22.758606
+            Yaw: -117.579514
+            Roll: -179.943161
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 18030586875506668644
+    }
+  }
+  InstanceHistory {
+    SelfId: 18071522524365644968
+    SubobjectId: 824751107316830474
+    InstanceId: 17417930210593093026
+    TemplateId: 8203255583191688814
+  }
+}
+Objects {
+  Id: 11022529167230630959
+  Name: "Ice Elemental"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6110084456217890859
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4581123000829918729
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Ice Elemental"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3950
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 105.000015
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10651173957833415648
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19.3708496
+            Y: 19.609314
+            Z: 120.157455
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -22.758606
+            Yaw: -117.579544
+            Roll: -179.943176
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11770059434527229294
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 45.9030762
+            Y: 16.7484131
+            Z: 112.008881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 65.039856
+            Yaw: -44.5310669
+            Roll: 66.723175
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18071133752491791119
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19.3708496
+            Y: 19.609314
+            Z: 51.7688751
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -22.758606
+            Yaw: -117.579514
+            Roll: -179.943161
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5895706148796594414
+    }
+  }
+  InstanceHistory {
+    SelfId: 11022529167230630959
+    SubobjectId: 7588293649937189261
+    InstanceId: 17417930210593093026
+    TemplateId: 8203255583191688814
   }
 }
 Objects {
