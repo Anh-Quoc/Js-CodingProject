@@ -1,3 +1,3 @@
 LeaderboardConfigs {
 }
-MainScene: "WaitingLobby"
+MainScene: "LObbyscene2"

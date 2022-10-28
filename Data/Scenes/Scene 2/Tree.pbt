@@ -26,6 +26,7 @@ Objects {
   ChildIds: 17317624130108919115
   ChildIds: 10106329912614482386
   ChildIds: 3273216552277478182
+  ChildIds: 6765514308802563120
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -43,6 +44,32 @@ Objects {
     Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 6765514308802563120
+  Name: "WeaponBuyMenu"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17201150350551223797
+      value {
+        Overrides {
+          Name: "Name"
+          String: "WeaponBuyMenu"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14587392819660221313
+    }
+  }
 }
 Objects {
   Id: 3273216552277478182

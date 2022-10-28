@@ -67,24 +67,24 @@ function OnPlayerPressed(player, binding)
 	end
 end
 
-function Tick(dt) 
-	if uiOn == true then 
-		local inOutText = script:GetCustomProperty("flashingText"):WaitForObject()
-		for alpha = 1,0,-0.1 do 
-    		local c = inOutText:GetColor()
-			if uiOn == false then inOutText:SetColor(Color.New(c.r, c.g, c.b, 0)) break end 
-    		inOutText:SetColor(Color.New(c.r, c.g, c.b, alpha))
-			Task.Wait(fadeinTime * 4)
-    	end
-		Task.Wait(fadeinTime * 4)
-		for alpha = 0,1,0.1 do 
-    		local c = inOutText:GetColor()
-			if uiOn == false then inOutText:SetColor(Color.New(c.r, c.g, c.b, 0)) break end 
-    		inOutText:SetColor(Color.New(c.r, c.g, c.b, alpha))
-			Task.Wait(fadeinTime * 4)
-    	end
-	end
-end 
+-- function Tick(dt) 
+-- 	if uiOn == true then 
+-- 		local inOutText = script:GetCustomProperty("flashingText"):WaitForObject()
+-- 		for alpha = 1,0,-0.1 do 
+--     		local c = inOutText:GetColor()
+-- 			if uiOn == false then inOutText:SetColor(Color.New(c.r, c.g, c.b, 0)) break end 
+--     		inOutText:SetColor(Color.New(c.r, c.g, c.b, alpha))
+-- 			Task.Wait(fadeinTime * 4)
+--     	end
+-- 		Task.Wait(fadeinTime * 4)
+-- 		for alpha = 0,1,0.1 do 
+--     		local c = inOutText:GetColor()
+-- 			if uiOn == false then inOutText:SetColor(Color.New(c.r, c.g, c.b, 0)) break end 
+--     		inOutText:SetColor(Color.New(c.r, c.g, c.b, alpha))
+-- 			Task.Wait(fadeinTime * 4)
+--     	end
+-- 	end
+-- end 
 
 while not player do
 	player = Game.GetLocalPlayer()
